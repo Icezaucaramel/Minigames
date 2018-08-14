@@ -1,4 +1,4 @@
-local HiddenHudElements = { --test
+local HiddenHudElements = {
 	CHudHealth = 1,
 	CHudBattery = 1,
 	CHudAmmo = 1,
