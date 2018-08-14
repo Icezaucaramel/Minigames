@@ -1,0 +1,180 @@
+[00:14:04] New map: cs_compound
+[00:14:12] Client "Icez" connected.
+[00:14:27] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 15 seconds).
+[00:14:40] Icez: /rtv
+[00:15:13] Server is shutting down/changing levels.
+
+
+
+[00:15:18] New map: cs_office
+[00:15:24] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 8 seconds).
+[00:15:34] Client "Bot01" connected.
+[00:15:34] Client "Bot01" spawned in server <BOT> (took 18 seconds).
+[00:16:19] Icez killed Bot01 using player
+[00:16:29] Icez killed Bot01 using player
+[00:16:38] Icez killed Bot01 using player
+[00:16:58] Icez: /Rtv
+[00:17:00] Icez: /rtv
+[00:17:27] Icez killed Bot01 using player
+[00:17:44] Icez suicided!
+[00:17:46] Icez: !menu
+[00:18:05] Icez gimped Themself
+[00:18:22] Icez killed Bot01 using player
+[00:18:27] Icez ungimped Themself
+[00:18:35] Icez to admins: Fuck off
+[00:18:44] (csay from Icez) FUCK.
+[00:18:55] Icez: /rtv
+[00:19:32] Icez suicided!
+[00:19:36] Server is shutting down/changing levels.
+
+
+
+[00:54:42] New map: cs_compound
+[00:54:47] Client "Icez" connected.
+[00:55:02] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 15 seconds).
+[00:55:33] Icez: :page_excel:
+[00:55:44] Icez: Fuck off ùate
+[00:55:48] Client "Bot01" connected.
+[00:55:48] Client "Bot01" spawned in server <BOT> (took 72 seconds).
+[00:56:46] Icez killed Bot01 using player
+[00:57:39] Bot01 suicided!
+[00:58:06] Icez killed Bot01 using player
+[00:58:25] Server is shutting down/changing levels.
+
+
+
+[01:48:47] New map: cs_compound
+[01:50:48] Server is shutting down/changing levels.
+
+
+
+[01:54:38] New map: cs_compound
+[01:55:30] Client "Icez" connected.
+[01:55:44] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 14 seconds).
+[01:56:11] Server is shutting down/changing levels.
+
+
+
+[02:17:09] New map: cs_compound
+[02:17:40] Client "Icez" connected.
+[02:17:43] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 3 seconds).
+[02:17:58] Client "Bot01" connected.
+[02:17:58] Client "Bot01" spawned in server <BOT> (took 51 seconds).
+[02:18:27] Icez: /rtv
+[02:18:30] Icez: /rtv
+[02:19:00] Server is shutting down/changing levels.
+
+
+
+[02:19:03] New map: mg_fun_omahabeach_2010
+[02:19:09] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 6 seconds).
+[02:19:19] Client "Bot02" connected.
+[02:19:19] Client "Bot02" spawned in server <BOT> (took 16 seconds).
+[02:20:46] Icez killed Bot02 using player
+[02:21:22] Icez suicided!
+[02:21:42] Icez suicided!
+[02:22:07] Icez suicided!
+[02:22:24] Icez suicided!
+[02:22:25] Dropped "Icez" from server<STEAM_0:1:79189497>
+[02:22:25] Dropped "Bot02" from server<BOT>
+[02:23:10] Server is shutting down/changing levels.
+
+
+
+[02:24:15] New map: cs_compound
+[02:24:35] Client "Icez" connected.
+[02:24:41] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 6 seconds).
+[02:25:05] Dropped "Icez" from server<STEAM_0:1:79189497>
+[02:25:09] Server is shutting down/changing levels.
+
+
+
+[13:39:05] New map: mg_sweeper
+[13:39:23] Client "Icez" connected.
+[13:39:30] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 7 seconds).
+[13:39:39] Icez: trrr
+[13:39:42] Icez was killed by trigger_hurt
+[13:39:49] Client "Bot01" connected.
+[13:39:49] Client "Bot01" spawned in server <BOT> (took 48 seconds).
+[13:40:43] Icez: !menu
+[13:41:27] Icez: /rtv
+[13:41:46] Icez suicided!
+[13:42:16] Server is shutting down/changing levels.
+
+
+
+[13:42:23] New map: de_partycity
+[13:42:36] Client "Icez" connected.
+[13:42:48] Server is shutting down/changing levels.
+
+
+
+[13:49:09] New map: mg_sweeper
+[13:49:15] Client "Icez" connected.
+[13:49:18] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 3 seconds).
+[13:49:35] Client "Bot01" connected.
+[13:49:35] Client "Bot01" spawned in server <BOT> (took 27 seconds).
+[13:49:36] Icez was killed by trigger_hurt
+[13:50:04] Dropped "Icez" from server<STEAM_0:1:79189497>
+[13:50:04] Dropped "Bot01" from server<BOT>
+[13:50:13] Client "Icez" connected.
+[13:50:17] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[13:50:22] Icez: /rtv
+[13:50:35] Icez was killed by trigger_hurt
+[13:50:55] Server is shutting down/changing levels.
+
+
+
+[13:50:58] New map: dm_no_mercy_b1
+[13:51:11] Server is shutting down/changing levels.
+
+
+
+[13:55:11] New map: mg_sweeper
+[13:55:13] Server is shutting down/changing levels.
+
+
+
+[13:56:03] New map: cs_compound
+[13:56:05] Client "Icez" connected.
+[13:56:15] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 10 seconds).
+[14:05:59] Server is shutting down/changing levels.
+
+
+
+[14:20:13] New map: cs_compound
+[14:20:21] Client "Icez" connected.
+[14:20:24] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 3 seconds).
+[14:20:40] Server is shutting down/changing levels.
+
+
+
+[15:08:55] New map: cs_compound
+[15:09:29] Server is shutting down/changing levels.
+
+
+
+[15:10:07] New map: cs_compound
+[15:10:12] Client "Icez" connected.
+[15:10:21] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 9 seconds).
+[15:10:46] Client "Bot01" connected.
+[15:10:46] Client "Bot01" spawned in server <BOT> (took 41 seconds).
+[15:12:30] Icez killed Bot01 using player
+[15:12:46] Icez: /rtv
+[15:12:59] Icez killed Bot01 using player
+[15:13:08] Icez killed Bot01 using player
+[15:13:15] Icez killed Bot01 using player
+[15:13:46] Server is shutting down/changing levels.
+
+
+
+[15:13:47] New map: mg_pauls_minecraft_course_v2
+[15:13:52] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[15:14:15] Icez was killed by trigger_hurt
+[15:14:24] Icez: /rtv
+[15:14:57] Server is shutting down/changing levels.
+
+
+
+[15:15:03] New map: de_partycity
+[15:15:19] Server is shutting down/changing levels.

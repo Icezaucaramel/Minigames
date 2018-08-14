@@ -1,0 +1,8 @@
+Mon Aug 13 00:26:36 2018 - [INFO] We are on SQLite and not need to update
+Mon Aug 13 00:26:36 2018 - [INFO] We are on SQLite, false
+Mon Aug 13 00:26:36 2018 - [INFO] We are on SQLite and not need to update
+Mon Aug 13 00:26:36 2018 - [INFO] We are on SQLite and not need to update
+Mon Aug 13 00:26:36 2018 - [INFO] We are on SQLite and don't need to update
+Mon Aug 13 00:26:36 2018 - [INFO] We are on SQLite and don't need to update
+Mon Aug 13 00:26:36 2018 - [INFO] We are on SQLite and don't need to update
+Mon Aug 13 00:26:36 2018 - [INFO] We are on SQLite and don't need to update

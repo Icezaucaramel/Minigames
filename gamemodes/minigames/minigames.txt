@@ -1,0 +1,7 @@
+"minigames"
+{
+	"base"				"base"
+	"title"				"Minigames"
+	"menusystem"		"1"
+	"maps"				"mg_"
+}
