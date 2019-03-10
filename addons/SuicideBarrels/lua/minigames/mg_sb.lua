@@ -4,8 +4,8 @@ Minigames.SuicideBarrels = Minigames.SuicideBarrels or {}
 if SERVER then
 	util.AddNetworkString("MG_SendInfoString_SB")
 	
-	include("mg_sb_config.lua")
-	AddCSLuaFile("mg_sb_config.lua")
+	include("mg_ff1_config.lua")
+	AddCSLuaFile("mg_ff1_config.lua")
 	
 	hook.Add("PlayerInitialSpawn", "GetDLCInfo", function(ply)
 		if Minigames.IsPlayingSB then
