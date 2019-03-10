@@ -1,4 +1,4 @@
-//AddCSLuaFile
+--AddCSLuaFile
 AddCSLuaFile("shared.lua")
 AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("ply_extension.lua")
@@ -12,7 +12,7 @@ AddCSLuaFile("cl_mapvote.lua")
 AddCSLuaFile("cl_scoreboard.lua")
 AddCSLuaFile("config_mapvote.lua")
 
-//Include
+--Include
 include("shared.lua")
 include("sv_chatcommands.lua")
 include("config_maps.lua")
@@ -22,7 +22,7 @@ include("ply_extension.lua")
 include("config_mapvote.lua")
 include("sv_mapvote.lua")
 
-//Network Strings
+--Network Strings
 util.AddNetworkString("Minigames_NotifyRound")
 util.AddNetworkString("Minigames_PointsOnKill")
 util.AddNetworkString("Minigames_ChoosePlayerModel")
@@ -219,7 +219,7 @@ function GM:ShutDown()
 	end
 end
 
-//fuck this noise
+--fuck this noise
 function GM:PlayerDeathSound()
 	return true
 end

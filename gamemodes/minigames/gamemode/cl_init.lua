@@ -19,7 +19,7 @@ function AddScoreboardButton(num,options)
 	} 
 end
 
-//I know using a table instead of a bool is weird, but the other wasn't working correctly :(
+-- I know using a table instead of a bool is weird, but the other wasnt working correctly :(
 local f2open = {}
 function Minigames:SelectTeams()
 

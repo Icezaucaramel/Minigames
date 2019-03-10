@@ -53,7 +53,7 @@ net.Receive("Minigames_MapVote_CtS", function(len,ply)
 	ply.LastVotedGamemode = votestring
 end)
 
-//////////////////////////////////////////////////////////////////////////
+--
 
 
 function Minigames:LoadGamemodeVotes()

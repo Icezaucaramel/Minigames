@@ -1,5 +1,5 @@
-///////////////////////////////////////////////////////////////////////
-//Assault Course maps
+--
+-- Assault Course maps
 --Players are put onto one team and must survive deadly traps to make it to the end.
 Minigames.AssaultCourse.Maps = {
 	["Saw IV"] = "mg_saw_iv",
@@ -11,10 +11,10 @@ Minigames.AssaultCourse.Maps = {
 	["Escape Prison"] = "mg_escape_prison_beta",
 	["Compound"] = "mg_hn_compoundcourse2",
 }
-///////////////////////////////////////////////////////////////////////
+-- 
 
-///////////////////////////////////////////////////////////////////////
-//Free For All maps
+-- 
+--Free For All maps
 --All players are pitted against each other in various scenarios, with winner being the last alive.
 Minigames.FreeForAll.Maps = {
 	["Canal Smash"] = "mg_canal_smash_b2",
@@ -23,8 +23,8 @@ Minigames.FreeForAll.Maps = {
 	["Sweeper Nature"] = "mg_Sweeper_Nature",
 	["Sweeper"] = "mg_sweeper",
 }
-///////////////////////////////////////////////////////////////////////
-//TEAM DEATHMATCH
+--
+--TEAM DEATHMATCH
 --Players are put onto two teams and given random weapons each round and the winning is last standing team.
 Minigames.TeamDeathmatch.Maps = {
 	["Pushcircle Night"] = "mg_pushcircle_night",
@@ -34,10 +34,10 @@ Minigames.TeamDeathmatch.Maps = {
 	["Pirate Wars"] = "mg_piratewars_2011xmas",
 	["Castlewars"] = "mg_ss_castlewars",
 }
-///////////////////////////////////////////////////////////////////////
+--
 
-///////////////////////////////////////////////////////////////////////
-//TEAM SURVIVAL
+--
+--TEAM SURVIVAL
 --Players are split into two teams and must survive, like Team Deathmatch but with more varied maps and you don't start off with a weapon.
 Minigames.TeamSurvival.Maps = {
 	["Ratrace"] = "mg_ratrace_v4",
@@ -53,10 +53,10 @@ Minigames.TeamSurvival.Maps = {
 	["Musicalrooms"] = "musicalrooms_b2_noknifes",
 	["Hellz Multigame"] = "mg_hellz_multigame_2012_fix",
 }
-///////////////////////////////////////////////////////////////////////
+--
 
 
-///////////////////////////////////////////////////////////////////////
+--
 -- TWO VERSUS ALL
 ---At the start of each round, two players are picked from blue and put onto red, having to kill everyone else who must survive. Good for Deathrun maps!
 Minigames.TwoVersusAll.Maps = {
@@ -69,9 +69,9 @@ Minigames.TwoVersusAll.Maps = {
 	["Tetris"] = "mg_tetris_final",
 	["Run Bitch Run"] = "mg_runbitch_run_v6",
 }
-///////////////////////////////////////////////////////////////////////
+--
 
-///////////////////////////////////////////////////////////////////////
+--
 -- CAPTURE THE FLAG
 --A flag is spawned at a random info_counter_terrorist and info_player_terrorist spot. When the opposite team walks over it, they'll pick it up and have to bring it back to their base for a point, while the other team tries to stop that.
 Minigames.CaptureTheFlag.Maps = {
@@ -81,4 +81,4 @@ Minigames.CaptureTheFlag.Maps = {
 	["Dust"] = "de_dust",
 	["Port"] = "de_port",
 }
-///////////////////////////////////////////////////////////////////////
+--

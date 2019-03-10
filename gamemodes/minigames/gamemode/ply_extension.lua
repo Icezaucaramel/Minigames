@@ -86,7 +86,7 @@ function Minigames:CanJoinBlue()
 	return false
 end
 
-//I know it's kinda sloppy to have two functions when I could merge them into one but I just thought this would be less messy cuz you gotta take into consideration the various gamemodes n stuff
+-- I know it's kinda sloppy to have two functions when I could merge them into one but I just thought this would be less messy cuz you gotta take into consideration the various gamemodes n stuff
 function Minigames:CanJoinRed()
 	if  Minigames:IsPlayingFreeForAll() or Minigames:IsPlayingAssaultCourse() or Minigames:IsPlayingTwoVersusAll() then
 		return false

@@ -1,4 +1,4 @@
-//ROUND NOTIFICATIONS
+-- ROUND NOTIFICATIONS
 net.Receive("Minigames_NotifyRound", function()
 	local number = tonumber(net.ReadString())
 	local winner = tonumber(net.ReadString())

@@ -41,7 +41,7 @@ function Minigames:CheckForPlayers()
 	
 end
 
-//////////////////////////////////////////////////////////////
+--
 
 function Minigames:PreRoundBegin()
 
@@ -100,7 +100,7 @@ function Minigames:PreRoundPlayers(ply)
 	hook.Call("PreRoundPlayer", GAMEMODE, ply)
 end
 
-//////////////////////////////////////////////////////////////
+--
 
 function Minigames:RoundBegin()
 	if Minigames.RoundState == 1 then return end

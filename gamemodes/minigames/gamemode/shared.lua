@@ -1,4 +1,4 @@
-//Core stuff - don't touch this!
+--Core stuff - don't touch this!
 DeriveGamemode( "base" )
 Minigames = Minigames or {}
 Minigames.TeamDeathmatch = Minigames.TeamDeathmatch or {}
@@ -8,11 +8,11 @@ Minigames.AssaultCourse = Minigames.AssaultCourse or {}
 Minigames.TwoVersusAll = Minigames.TwoVersusAll or {}
 Minigames.CaptureTheFlag = Minigames.CaptureTheFlag or {}
 
-//Credits
+-- Credits
 GM.Name		= "Minigames"
-GM.Author	= "Niandra Lades"
-GM.Email	= "niandraletur@gmail.com"
-GM.Website	= "empyreangaming.co.uk"
+GM.Author	= "Icez&Co"
+GM.Email	= "i don't do that anymore, fuck off (original creator)"
+GM.Website	= "thisbitchempty.dot.uk.com"
 
 TEAM_BLUE = 2
 TEAM_RED = 3

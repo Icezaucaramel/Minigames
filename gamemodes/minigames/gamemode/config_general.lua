@@ -1,58 +1,58 @@
-//Pointshop
+-- Pointshop
 Minigames.UsePointshop = false -- Do you have a Pointshop installed and would you like players to get rewards for playing?
 Minigames.UsePointshop_2 = true -- Do you have a Pointshop installed and would you like players to get rewards for playing?
 Minigames.PointsPerKill = 10 -- How many Pointshop points should players get?
 
-//Misc
+-- Misc
 Minigames.GamevoteTimer = 15 -- How many seconds do players have to vote?
 Minigames.MapvoteTimer = 15 -- How many seconds do players have to vote?
 Minigames.EnableFastDL = false -- Set to true to use fastdl, instead of Workshop download
 
-//Addon support
+-- Addon support
 Minigames.DefaultHUD = true -- Change to false if you're using a custom/different hud
 Minigames.DefaultScoreboard = true -- Change to false to use a custom scoreboard addon
 Minigames.DefaultMapvote = true -- Change to false if you're using a custom mapvote
 
-//Rounds
+-- Rounds
 Minigames.LateJoinersTime = 10 -- How many seconds into a round can later joiners spawn, instead of waiting until next round?
 Minigames.InitialPreRound = 10 -- When the server loads a map or is started, how many seconds until the first round? Give players enough time to load in!
 Minigames.PreRound = 5 -- When the server loads a map or is started, how many seconds until the first round? Give players enough time to load in!
 Minigames.EndOfRoundTime = 10 -- How many seconds should players get in between waves?
 
-//Winning Points -- Only if Pointshop is enabled.
+-- /Winning Points -- Only if Pointshop is enabled.
 Minigames.TeamDeathmatch.WinningPoints = 25 -- How many points should the winning team get?
 Minigames.FreeForAll.WinningPoints = 75 -- How many points should the remaining person in FFA get?
 Minigames.AssaultCourse.WinningPoints = 100 -- How many points should a player get if they press E on a teddy during AC?
 Minigames.TwoVersusAll.WinningPoints = 20 -- How many points should the winning team get in TVA?
 
-//Number of Rounds
+-- Number of Rounds
 Minigames.AssaultCourse.NumberOfRounds = 4 -- How many rounds of AC should we play?
 Minigames.FreeForAll.NumberOfRounds = 10 -- How many rounds of FFA should we play?
 Minigames.TeamDeathmatch.NumberOfRounds = 5 -- How many rounds of TDM should we play?
 Minigames.TeamSurvival.NumberOfRounds = 6 -- How many rounds of TS should we play?
 Minigames.TwoVersusAll.NumberOfRounds = 6 -- How many rounds of TVA should we play?
 
-//Round time
+-- Round time
 Minigames.AssaultCourse.RoundTime = 60*5
 Minigames.TeamDeathmatch.RoundTime = 60*3
 Minigames.TwoVersusAll.RoundTime = 60*3
 Minigames.TeamSurvival.RoundTime = 60*4
 Minigames.FreeForAll.RoundTime = 60*3
 
-///////////////////////////////////////
+--
 
-//Capture The Flag
+--Capture The Flag
 Minigames.CaptureTheFlag.WinCondition = 3 -- How many captures does a team need to win?
 Minigames.CaptureTheFlag.RespawnTime = 6 -- How many seconds is a player death before they come back to life?
 Minigames.CaptureTheFlag.FlagReset = 10 -- How many seconds is a player death before they come back to life?
 Minigames.CaptureTheFlag.NumberOfRounds = 1 -- How many rounds of CTF should we play?
 Minigames.CaptureTheFlag.RoundTime = 60*8 -- How long should CTF rounds last?
 
-///////////////////////////////////////
+--
 
-///////////////////////////////////////
+--
 
-//Walk Speeds
+--Walk Speeds
 Minigames.AssaultCourse.WalkSpeed = 250
 Minigames.TeamDeathmatch.WalkSpeed = 270
 Minigames.TwoVersusAll.WalkSpeed = 270
@@ -60,7 +60,7 @@ Minigames.TeamSurvival.WalkSpeed = 270
 Minigames.FreeForAll.WalkSpeed = 270
 Minigames.CaptureTheFlag.WalkSpeed = 270
 
-//Run Speeds
+--Run Speeds
 Minigames.AssaultCourse.RunSpeed = 275
 Minigames.TeamDeathmatch.RunSpeed = 300
 Minigames.TwoVersusAll.RunSpeed = 300
@@ -68,9 +68,9 @@ Minigames.TeamSurvival.RunSpeed = 300
 Minigames.FreeForAll.RunSpeed = 300
 Minigames.CaptureTheFlag.RunSpeed = 300
 
-///////////////////////////////////////
+--
 
-//Player Models that users can pick if it's Assault Course and Free For All
+-- Player Models that users can pick if it's Assault Course and Free For All
 Minigames.GenericPlayerModels = {
 	"models/player/alyx.mdl",
 	"models/player/barney.mdl",
@@ -170,7 +170,7 @@ Minigames.HelpCommands = {
 	["/rtv"] = "Vote to change map.",
 }
 
-//NEWLY ADDED IN MAY/JUNE 2016 UPDATE - FROM HERE 
+-- NEWLY ADDED IN MAY/JUNE 2016 UPDATE - FROM HERE 
 Minigames.AdminGroups = {
 	"superadmin",
 	"admin"
@@ -178,4 +178,4 @@ Minigames.AdminGroups = {
 
 Minigames.FallbackMap = "mg_sweeper" -- If the current map file does not exist on the server, what should we change to? 
 
-//NEWLY ADDED IN MAY/JUNE 2016 UPDATE - TO HERE
+-- NEWLY ADDED IN MAY/JUNE 2016 UPDATE - TO HERE
