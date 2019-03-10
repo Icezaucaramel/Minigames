@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\weapons\v_models\havoc_sg552\snip_sg550"	
+	"$bumpmap" "models\weapons\v_models\havoc_sg552\snip_sg550 norm"
+}

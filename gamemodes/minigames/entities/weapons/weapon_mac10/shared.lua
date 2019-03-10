@@ -1,30 +1,76 @@
-AddCSLuaFile( "shared.lua" )
+-- Variables that are used on both client and server
+SWEP.Gun = ("bb_mac10")					-- must be the name of your swep
+if (GetConVar(SWEP.Gun.."_allowed")) != nil then
+	if not (GetConVar(SWEP.Gun.."_allowed"):GetBool()) then SWEP.Base = "bobs_blacklisted" SWEP.PrintName = SWEP.Gun return end
+end
+SWEP.Category				= "CS:S Weapons"
+SWEP.Author				= ""
+SWEP.Contact				= ""
+SWEP.Purpose				= ""
+SWEP.Instructions				= ""
+SWEP.MuzzleAttachment			= "1" 	-- Should be "1" for CSS models or "muzzle" for hl2 models
+SWEP.ShellEjectAttachment			= "2" 	-- Should be "2" for CSS models or "1" for hl2 models
+SWEP.PrintName				= "MAC 10"		-- Weapon name (Shown on HUD)	
+SWEP.Slot				= 2				-- Slot in the weapon selection menu
+SWEP.SlotPos				= 70			-- Position in the slot
+SWEP.DrawAmmo				= true		-- Should draw the default HL2 ammo counter
+SWEP.DrawWeaponInfoBox			= false		-- Should draw the weapon info box
+SWEP.BounceWeaponIcon   		= 	false	-- Should the weapon icon bounce?
+SWEP.DrawCrosshair			= true		-- set false if you want no crosshair
+SWEP.Weight				= 30			-- rank relative ot other weapons. bigger is better
+SWEP.AutoSwitchTo			= true		-- Auto switch to if we pick it up
+SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
+SWEP.HoldType 				= "pistol"		-- how others view you carrying the weapon
 
-SWEP.PrintName			= "MAC10"			
-SWEP.Slot				= 0
-SWEP.SlotPos			= 1
+SWEP.ViewModelFOV			= 55
+SWEP.ViewModelFlip			= false
+SWEP.ViewModel				= "models/weapons/cstrike/c_smg_mac10.mdl"	-- Weapon view model
+SWEP.WorldModel				= "models/weapons/w_smg_mac10.mdl"	-- Weapon world model
+SWEP.Base				= "bobs_gun_base"
+SWEP.Spawnable				= true
+SWEP.UseHands = true
+SWEP.AdminSpawnable			= true
+SWEP.FiresUnderwater = false
 
-SWEP.ViewModelFOV		= 57
-SWEP.ViewModelFlip		= false
+SWEP.Primary.Sound			= Sound("Weapon_MAC10.1")		-- Script that calls the primary fire sound
+SWEP.Primary.RPM			= 1090			-- This is in Rounds Per Minute
+SWEP.Primary.ClipSize			= 32		-- Size of a clip
+SWEP.Primary.DefaultClip		= 64		-- Bullets you start with
+SWEP.Primary.KickUp				= 0.3		-- Maximum up recoil (rise)
+SWEP.Primary.KickDown			= 0.3		-- Maximum down recoil (skeet)
+SWEP.Primary.KickHorizontal		= 0.3		-- Maximum up recoil (stock)
+SWEP.Primary.Automatic			= true		-- Automatic = true; Semi Auto = false
+SWEP.Primary.Ammo			= "smg1"
 
-SWEP.HoldType			= "ar2"
-SWEP.Base				= "weapon_base_mg"
-SWEP.Category			= "Primary"
+SWEP.Secondary.IronFOV			= 55		-- How much you 'zoom' in. Less is more! 	
 
-//Primary
-SWEP.Primary.Automatic		= true
-SWEP.Primary.Sound 			= Sound( "Weapon_Mac10.Single" )
-SWEP.Primary.Damage = 12
-SWEP.Primary.Delay = 0.065
-SWEP.Primary.ClipSize = 30
-SWEP.Primary.DefaultClip = 90
+SWEP.data 				= {}				--The starting firemode
+SWEP.data.ironsights			= 1
 
-SWEP.Spawnable			= false
-SWEP.AdminSpawnable		= true
+SWEP.Primary.NumShots	= 1		-- How many bullets to shoot per trigger pull
+SWEP.Primary.Damage		= 23	-- Base damage per bullet
+SWEP.Primary.Spread		= .027	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
+SWEP.Primary.IronAccuracy = .017 -- Ironsight accuracy, should be the same for shotguns
 
-SWEP.ViewModel	= "models/weapons/cstrike/c_smg_mac10.mdl"
-SWEP.WorldModel	= "models/weapons/w_smg_mac10.mdl"
+-- Enter iron sight info and bone mod info below
+SWEP.IronSightsPos = Vector(-9.837, 0, 2.759)
+SWEP.IronSightsAng = Vector(1.036, -5.292, -8.233)
+SWEP.SightsPos = Vector(-9.837, 0, 2.759)
+SWEP.SightsAng = Vector(1.036, -5.292, -8.233)
+SWEP.RunSightsPos = Vector(0, 0, 0)
+SWEP.RunSightsAng = Vector(-9.469, -1.701, 0)
 
-SWEP.Weight				= 5
-SWEP.AutoSwitchTo		= false
-SWEP.AutoSwitchFrom		= false
+
+if GetConVar("M9KDefaultClip") == nil then
+	print("M9KDefaultClip is missing! You may have hit the lua limit!")
+else
+	if GetConVar("M9KDefaultClip"):GetInt() != -1 then
+		SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize * GetConVar("M9KDefaultClip"):GetInt()
+	end
+end 
+
+if GetConVar("M9KUniqueSlots") != nil then
+	if not (GetConVar("M9KUniqueSlots"):GetBool()) then 
+		SWEP.SlotPos = 2
+	end
+end

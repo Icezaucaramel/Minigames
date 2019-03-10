@@ -53,20 +53,20 @@ Minigames.CaptureTheFlag.RoundTime = 60*8 -- How long should CTF rounds last?
 --
 
 --Walk Speeds
-Minigames.AssaultCourse.WalkSpeed = 250
-Minigames.TeamDeathmatch.WalkSpeed = 270
-Minigames.TwoVersusAll.WalkSpeed = 270
-Minigames.TeamSurvival.WalkSpeed = 270
-Minigames.FreeForAll.WalkSpeed = 270
-Minigames.CaptureTheFlag.WalkSpeed = 270
+Minigames.AssaultCourse.WalkSpeed = 275
+Minigames.TeamDeathmatch.WalkSpeed = 275
+Minigames.TwoVersusAll.WalkSpeed = 275
+Minigames.TeamSurvival.WalkSpeed = 275
+Minigames.FreeForAll.WalkSpeed = 275
+Minigames.CaptureTheFlag.WalkSpeed = 275
 
 --Run Speeds
 Minigames.AssaultCourse.RunSpeed = 275
-Minigames.TeamDeathmatch.RunSpeed = 300
-Minigames.TwoVersusAll.RunSpeed = 300
-Minigames.TeamSurvival.RunSpeed = 300
-Minigames.FreeForAll.RunSpeed = 300
-Minigames.CaptureTheFlag.RunSpeed = 300
+Minigames.TeamDeathmatch.RunSpeed = 275
+Minigames.TwoVersusAll.RunSpeed = 275
+Minigames.TeamSurvival.RunSpeed = 275
+Minigames.FreeForAll.RunSpeed = 275
+Minigames.CaptureTheFlag.RunSpeed = 275
 
 --
 

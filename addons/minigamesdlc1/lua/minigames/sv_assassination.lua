@@ -1,4 +1,4 @@
-//We are gonna use TDM as a skeleton here
+-- We are gonna use TDM as a skeleton here
 hook.Add("RoundEnd", "OITC_END", function()
 	timer.Destroy("CheckEnd")
 end)
@@ -102,7 +102,7 @@ hook.Add("PlayerSpawn", "VIPC_Color", function(ply)
 	
 	timer.Simple(1, function()
 		if ply == Minigames.VIP.VIP then
-			ply:Give("weapon_crowbar")
+			ply:Give("weapon_knife")
 		else
 			Minigames:GiveRandom(ply)
 		end
@@ -127,7 +127,7 @@ hook.Add("RoundEnd", "VIP_end", function()
 			v:SetTeam(2)
 		end
 		
-		v:ChatPrint("Swapping teams!")
+		v:ChatPrint("Changement D'équipe !")
 	end
 	
 	timer.Destroy("CheckBalance")

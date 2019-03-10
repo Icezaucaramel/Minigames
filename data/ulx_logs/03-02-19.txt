@@ -1,0 +1,482 @@
+[00:18:47] New map: cs_compound
+[00:18:52] Client "JeanJass LaMenace" connected.
+[00:18:59] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 7 seconds).
+[00:19:11] Client "Bot01" connected.
+[00:19:11] Client "Bot01" spawned in server <BOT> (took 26 seconds).
+[00:19:12] Client "Bot02" connected.
+[00:19:12] Client "Bot02" spawned in server <BOT> (took 27 seconds).
+[00:19:13] Client "Bot03" connected.
+[00:19:13] Client "Bot03" spawned in server <BOT> (took 28 seconds).
+[00:19:13] Client "Bot04" connected.
+[00:19:13] Client "Bot04" spawned in server <BOT> (took 28 seconds).
+[00:19:14] Bot01 suicided!
+[00:19:50] Server is shutting down/changing levels.
+
+
+
+[00:22:30] New map: cs_compound
+[00:22:33] Client "JeanJass LaMenace" connected.
+[00:22:37] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[00:22:48] Client "Bot01" connected.
+[00:22:48] Client "Bot01" spawned in server <BOT> (took 20 seconds).
+[00:22:48] Client "Bot02" connected.
+[00:22:48] Client "Bot02" spawned in server <BOT> (took 20 seconds).
+[00:22:49] Client "Bot03" connected.
+[00:22:49] Client "Bot03" spawned in server <BOT> (took 21 seconds).
+[00:22:58] Bot01 suicided!
+[00:23:14] JeanJass LaMenace killed Bot03 using player
+[00:23:50] Server is shutting down/changing levels.
+
+
+
+[00:28:00] New map: cs_compound
+[00:28:05] Client "JeanJass LaMenace" connected.
+[00:28:09] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[00:28:59] Client "Raykeno" connected.
+[00:29:20] JeanJass LaMenace: !menu
+[00:29:31] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 32 seconds).
+[00:29:40] JeanJass LaMenace added Raykeno to group superadmin
+[00:30:31] JeanJass LaMenace: !menu
+[00:30:42] JeanJass LaMenace changed the map to buses_from_hell_redux
+[00:30:42] Server is shutting down/changing levels.
+
+
+
+[00:30:44] New map: buses_from_hell_redux
+[00:30:49] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 6 seconds).
+[00:31:39] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 56 seconds).
+[00:33:13] JeanJass LaMenace was killed by trigger_hurt
+[00:33:33] Raykeno was killed by func_physbox
+[00:33:42] Dropped "JeanJass LaMenace" from server<STEAM_0:1:79189497>
+[00:34:04] Server is shutting down/changing levels.
+
+
+
+[00:34:06] New map: de_partycity
+[00:34:55] Client "Raykeno" connected.
+[00:35:07] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 12 seconds).
+[00:35:31] Raykeno: !menu
+[00:35:50] (SILENT) Raykeno ran rcon command: bot
+[00:35:50] Client "Bot01" connected.
+[00:35:50] Client "Bot01" spawned in server <BOT> (took 105 seconds).
+[00:36:40] Raykeno killed Bot01 using player
+[00:37:10] Raykeno killed Bot01 using player
+[00:37:14] Raykeno: !menu
+[00:38:06] Raykeno killed Bot01 using player
+[00:38:15] Raykeno: !forcespce
+[00:38:21] Raykeno: !menu
+[00:38:44] Raykeno changed the map to gg_purplemania with gamemode minigames
+[00:38:44] Server is shutting down/changing levels.
+
+
+
+[00:38:45] New map: gg_purplemania
+[00:39:55] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 71 seconds).
+[00:40:06] (SILENT) Raykeno ran rcon command: bot
+[00:40:06] Client "Bot02" connected.
+[00:40:06] Client "Bot02" spawned in server <BOT> (took 82 seconds).
+[00:40:12] (SILENT) Raykeno ran rcon command: boty
+[00:40:16] (SILENT) Raykeno ran rcon command: bot
+[00:40:16] Client "Bot03" connected.
+[00:40:16] Client "Bot03" spawned in server <BOT> (took 92 seconds).
+[00:40:46] Raykeno killed Bot02 using player
+[00:41:19] Raykeno killed Bot02 using player
+[00:41:38] Raykeno killed Bot02 using player
+[00:41:45] Raykeno: !menu
+[00:42:15] Raykeno changed the map to mg_ka_trains_detach with gamemode minigames
+[00:42:15] Server is shutting down/changing levels.
+
+
+
+[00:42:17] New map: mg_ka_trains_detach
+[00:43:05] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 49 seconds).
+[00:43:16] (SILENT) Raykeno ran rcon command: bot
+[00:43:16] Client "Bot04" connected.
+[00:43:16] Client "Bot04" spawned in server <BOT> (took 60 seconds).
+[00:43:24] (SILENT) Raykeno ran rcon command: bot
+[00:43:24] Client "Bot05" connected.
+[00:43:24] Client "Bot05" spawned in server <BOT> (took 68 seconds).
+[00:43:40] Raykeno: !menu
+[00:44:21] Raykeno: !spawn
+[00:44:25] Raykeno: !respawn
+[00:44:27] Raykeno: !menu
+[00:45:57] Raykeno: !respawn Raykeno
+[00:47:17] Raykeno: !menu
+[00:47:30] Raykeno changed the map to mg_hello_kitty_arena_v1b with gamemode minigames
+[00:47:30] Server is shutting down/changing levels.
+
+
+
+[00:47:32] New map: mg_hello_kitty_arena_v1b
+[00:53:53] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 382 seconds).
+[00:54:06] (SILENT) Raykeno ran rcon command: bot
+[00:54:06] Client "Bot06" connected.
+[00:54:06] Client "Bot06" spawned in server <BOT> (took 395 seconds).
+[00:54:14] Raykeno: quack
+[00:54:16] Raykeno: !team
+[00:54:19] Raykeno: !changeteam
+[00:54:28] Raykeno: quack
+[00:55:30] Raykeno killed Bot06 using player
+[00:55:55] Raykeno killed Bot06 using player
+[00:56:18] Raykeno killed Bot06 using player
+[00:56:26] Raykeno: !menu
+[00:56:55] Raykeno changed the map to mg_car_survival_v4 with gamemode minigames
+[00:56:55] Server is shutting down/changing levels.
+
+
+
+[00:56:57] New map: mg_car_survival_v4
+[00:57:04] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 8 seconds).
+[00:57:15] (SILENT) Raykeno ran rcon command: bot
+[00:57:15] Client "Bot07" connected.
+[00:57:15] Client "Bot07" spawned in server <BOT> (took 19 seconds).
+[00:57:15] Bot07 was killed by trigger_hurt
+[00:57:27] (SILENT) Raykeno ran rcon command: bot
+[00:57:27] Client "Bot08" connected.
+[00:57:27] Client "Bot08" spawned in server <BOT> (took 31 seconds).
+[00:57:27] Bot08 was killed by trigger_hurt
+[00:57:55] Raykeno: !map
+[00:58:01] Raykeno: !menu
+[00:58:46] Raykeno changed the map to mg_hello_kitty_arena_v1b with gamemode minigames
+[00:58:46] Server is shutting down/changing levels.
+
+
+
+[00:58:47] New map: mg_hello_kitty_arena_v1b
+[02:28:38] Client "modza007" connected.
+[02:29:57] Client "Enderfire48" connected.
+[02:35:28] Client "modza007" spawned in server <STEAM_0:1:235651071> (took 410 seconds).
+[02:36:35] Client "Enderfire48" spawned in server <STEAM_0:1:126791812> (took 398 seconds).
+[02:37:54] Enderfire48 killed modza007 using player
+[02:38:41] Enderfire48 killed modza007 using player
+[02:39:30] Enderfire48 killed modza007 using player
+[02:40:20] modza007 killed Enderfire48 using player
+[02:41:01] Enderfire48 killed modza007 using player
+[02:41:31] Server is shutting down/changing levels.
+
+
+
+[02:41:33] New map: mg_jumper_fix2
+[02:46:18] Client "modza007" spawned in server <STEAM_0:1:235651071> (took 286 seconds).
+[02:46:19] modza007 was killed by trigger_hurt
+[02:46:59] Client "Enderfire48" connected.
+[02:47:43] Server is shutting down/changing levels.
+
+
+
+[03:22:34] New map: cs_compound
+[03:23:19] Client "JeanJass LaMenace" connected.
+[03:23:26] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 7 seconds).
+[03:24:49] Client "Emiya" connected.
+[03:26:43] Client "Emiya" connected.
+[03:28:27] Server is shutting down/changing levels.
+
+
+
+[03:28:39] New map: cs_compound
+[03:28:48] Client "JeanJass LaMenace" connected.
+[03:28:52] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[03:29:07] Client "Emiya" connected.
+[03:33:01] Client "Emiya" spawned in server <STEAM_0:1:479287869> (took 234 seconds).
+[03:34:42] JeanJass LaMenace: cc
+[03:34:45] Emiya: slété
+[03:35:09] Emiya killed JeanJass LaMenace using player
+[03:35:13] JeanJass LaMenace: !menu
+[03:35:26] Emiya: yes yes yes
+[03:35:28] JeanJass LaMenace changed the map to mg_piratewars_2011xmas
+[03:35:28] Server is shutting down/changing levels.
+
+
+
+[03:35:31] New map: mg_piratewars_2011xmas
+[03:35:37] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 7 seconds).
+[03:36:09] JeanJass LaMenace: !menu
+[03:36:49] JeanJass LaMenace changed the map to mg_neox_multigames_pbeta2
+[03:36:49] Server is shutting down/changing levels.
+
+
+
+[03:36:53] New map: mg_neox_multigames_pbeta2
+[03:37:01] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 9 seconds).
+[03:38:08] Client "Emiya" connected.
+[03:47:42] Client "Emiya" connected.
+[03:52:10] Client "Emiya" spawned in server <STEAM_0:1:479287869> (took 268 seconds).
+[03:53:37] Emiya: SALAMALHEYKOUM
+[03:53:40] Emiya: enfin
+[03:54:12] Emiya: nn
+[03:54:52] JeanJass LaMenace was killed by trigger_hurt
+[03:54:55] Emiya was killed by trigger_hurt
+[03:55:47] Emiya: wooof
+[03:55:52] JeanJass LaMenace killed Emiya using player
+[03:55:59] Emiya: taurai vu mes fps
+[03:56:01] Emiya: bordel
+[03:56:22] JeanJass LaMenace killed Emiya using player
+[03:56:27] Emiya: AYAA
+[03:56:34] Emiya: FIXED
+[03:57:11] Emiya: script error
+[03:57:12] Emiya: oof
+[03:57:25] Emiya: lam usique ton
+[03:57:26] Emiya: ayaa
+[03:57:30] Emiya: tellement vieux
+[03:57:32] Emiya killed JeanJass LaMenace using player
+[03:58:09] Emiya: AYAAAA CETTE MUSIQUE
+[03:59:15] Emiya was killed by env_fire
+[03:59:21] Emiya: gg abuse
+[03:59:25] JeanJass LaMenace was killed by env_fire
+[03:59:31] Emiya: bah si javais pas un pc en wood serait MIEUX LUL
+[03:59:35] Emiya: et problème de map ptêt
+[03:59:51] Emiya: hm sinon oué cest sympa
+[04:00:16] Emiya: met une last vu que ça change après
+[04:01:05] JeanJass LaMenace was killed by func_physbox
+[04:01:21] Emiya: bah ça os
+[04:01:22] Emiya: non?
+[04:01:27] Emiya: oué jconnais
+[04:01:30] Emiya: bon jvais dodo
+[04:01:34] Emiya: fin" dodo"
+[04:01:35] Server is shutting down/changing levels.
+
+
+
+[04:01:39] New map: de_partycity
+
+
+
+[17:10:20] New map: cs_compound
+[17:10:22] Client "JeanJass LaMenace" connected.
+[17:10:38] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 16 seconds).
+[17:10:49] Client "Bot01" connected.
+[17:10:49] Client "Bot01" spawned in server <BOT> (took 33 seconds).
+[17:10:49] Client "Bot02" connected.
+[17:10:49] Client "Bot02" spawned in server <BOT> (took 33 seconds).
+[17:10:50] Client "Bot03" connected.
+[17:10:50] Client "Bot03" spawned in server <BOT> (took 34 seconds).
+[17:10:51] Client "Bot04" connected.
+[17:10:51] Client "Bot04" spawned in server <BOT> (took 35 seconds).
+[17:10:51] Bot01 suicided!
+[17:12:35] Dropped "JeanJass LaMenace" from server<STEAM_0:1:79189497>
+[17:12:35] Dropped "Bot01" from server<BOT>
+[17:12:35] Dropped "Bot02" from server<BOT>
+[17:12:35] Dropped "Bot03" from server<BOT>
+[17:12:35] Dropped "Bot04" from server<BOT>
+[17:19:02] Client "JeanJass LaMenace" connected.
+[17:19:06] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[17:19:17] JeanJass LaMenace: !menu
+[17:27:56] Server is shutting down/changing levels.
+
+
+
+[17:29:57] New map: cs_compound
+[17:30:46] Client "JeanJass LaMenace" connected.
+[17:30:51] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[17:31:01] JeanJass LaMenace: !menu
+[17:31:12] JeanJass LaMenace changed the map to mg_saw_iv
+[17:31:12] Server is shutting down/changing levels.
+
+
+
+[17:31:15] New map: mg_saw_iv
+[17:31:21] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 7 seconds).
+[17:31:23] Client "Raykeno" connected.
+[17:31:36] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 13 seconds).
+[17:32:58] JeanJass LaMenace was killed by trigger_hurt
+[17:33:02] Dropped "JeanJass LaMenace" from server<STEAM_0:1:79189497>
+[17:33:05] Server is shutting down/changing levels.
+
+
+
+[17:43:33] New map: cs_compound
+[17:43:34] Client "JeanJass LaMenace" connected.
+[17:43:38] Client "Raykeno" connected.
+[17:43:39] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[17:43:46] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 8 seconds).
+[17:43:57] Dropped "Raykeno" from server<STEAM_0:0:39526070>
+[17:44:19] Client "Raykeno" connected.
+[17:44:28] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 9 seconds).
+[17:45:14] Raykeno: !explode JeanJass LaMenace
+[17:45:33] JeanJass LaMenace killed Raykeno using player
+[17:47:36] Server is shutting down/changing levels.
+
+
+
+[17:47:37] New map: mg_Sweeper_Nature
+[17:47:43] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 6 seconds).
+[17:47:48] JeanJass LaMenace: !menu
+[17:48:22] Client "Raykeno" connected.
+[17:48:32] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 10 seconds).
+[17:48:47] JeanJass LaMenace was killed by trigger_hurt
+[17:48:47] Raykeno was killed by trigger_hurt
+[17:48:56] (SILENT) Raykeno ran rcon command: bot
+[17:48:56] Client "Bot01" connected.
+[17:48:56] Client "Bot01" spawned in server <BOT> (took 79 seconds).
+[17:48:56] Bot01 was killed by trigger_hurt
+[17:48:58] Bot01 was killed by trigger_hurt
+[17:48:59] (SILENT) Raykeno ran rcon command: bot
+[17:48:59] Client "Bot02" connected.
+[17:48:59] Client "Bot02" spawned in server <BOT> (took 82 seconds).
+[17:49:00] Bot02 was killed by trigger_hurt
+[17:49:03] Bot02 was killed by trigger_hurt
+[17:49:03] Bot01 was killed by trigger_hurt
+[17:49:04] (SILENT) Raykeno ran rcon command: bot
+[17:49:04] Client "Bot03" connected.
+[17:49:04] Client "Bot03" spawned in server <BOT> (took 87 seconds).
+[17:49:57] JeanJass LaMenace was killed by trigger_hurt
+[17:50:03] Raykeno was killed by trigger_hurt
+[17:50:06] (SILENT) Raykeno ran rcon command: bot
+[17:50:06] Client "Bot04" connected.
+[17:50:06] Client "Bot04" spawned in server <BOT> (took 149 seconds).
+[17:50:07] Bot04 was killed by trigger_hurt
+[17:50:08] Bot04 was killed by trigger_hurt
+[17:50:08] Bot02 was killed by trigger_hurt
+[17:50:09] Bot03 was killed by trigger_hurt
+[17:50:09] Bot01 was killed by trigger_hurt
+[17:50:13] Bot04 was killed by trigger_hurt
+[17:50:13] Bot02 was killed by trigger_hurt
+[17:50:14] Bot03 was killed by trigger_hurt
+[17:50:14] Bot01 was killed by trigger_hurt
+[17:50:19] (SILENT) Raykeno ran rcon command: bot
+[17:50:19] Client "Bot05" connected.
+[17:50:19] Client "Bot05" spawned in server <BOT> (took 162 seconds).
+[17:50:29] JeanJass LaMenace was killed by trigger_hurt
+[17:50:32] (SILENT) Raykeno ran rcon command: bot
+[17:50:32] Client "Bot06" connected.
+[17:50:32] Client "Bot06" spawned in server <BOT> (took 175 seconds).
+[17:50:36] (SILENT) Raykeno ran rcon command: bot
+[17:50:36] Client "Bot07" connected.
+[17:50:36] Client "Bot07" spawned in server <BOT> (took 179 seconds).
+[17:50:40] Bot07 was killed by trigger_hurt
+[17:50:41] Bot02 was killed by trigger_hurt
+[17:50:41] Bot05 was killed by trigger_hurt
+[17:50:41] Bot06 was killed by trigger_hurt
+[17:50:41] Bot01 was killed by trigger_hurt
+[17:50:42] Bot04 was killed by trigger_hurt
+[17:50:42] Bot03 was killed by trigger_hurt
+[17:50:45] Bot03 was killed by trigger_hurt
+[17:50:45] Bot01 was killed by trigger_hurt
+[17:50:46] Bot06 was killed by trigger_hurt
+[17:50:46] Bot07 was killed by trigger_hurt
+[17:50:46] Bot02 was killed by trigger_hurt
+[17:50:46] Bot04 was killed by trigger_hurt
+[17:50:47] Bot05 was killed by trigger_hurt
+[17:50:55] Raykeno: !respawn *
+[17:51:11] Raykeno: !give crowbar
+[17:52:25] JeanJass LaMenace was killed by trigger_hurt
+[17:52:26] Raykeno was killed by trigger_hurt
+[17:52:30] JeanJass LaMenace: !menu
+[17:52:36] Bot05 was killed by trigger_hurt
+[17:52:37] Bot02 was killed by trigger_hurt
+[17:52:37] Bot03 was killed by trigger_hurt
+[17:52:37] Bot07 was killed by trigger_hurt
+[17:52:38] Bot01 was killed by trigger_hurt
+[17:52:38] Bot06 was killed by trigger_hurt
+[17:52:38] Bot04 was killed by trigger_hurt
+[17:52:40] (SILENT) Raykeno ran rcon command: bot
+[17:52:40] Client "Bot08" connected.
+[17:52:40] Client "Bot08" spawned in server <BOT> (took 303 seconds).
+[17:52:41] Bot03 was killed by trigger_hurt
+[17:52:42] Bot02 was killed by trigger_hurt
+[17:52:42] Bot07 was killed by trigger_hurt
+[17:52:42] Bot01 was killed by trigger_hurt
+[17:52:42] Bot04 was killed by trigger_hurt
+[17:52:42] Bot06 was killed by trigger_hurt
+[17:52:43] Bot05 was killed by trigger_hurt
+[17:52:54] Raykeno was killed by trigger_hurt
+[17:52:58] JeanJass LaMenace changed the map to mg_rolling_balls
+[17:52:58] Server is shutting down/changing levels.
+
+
+
+[17:53:00] New map: mg_rolling_balls
+[17:53:05] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 6 seconds).
+[17:54:57] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 118 seconds).
+[17:55:28] Raykeno was killed by func_physbox
+[17:55:52] JeanJass LaMenace was killed by func_physbox
+[17:56:24] Raykeno was killed by func_physbox
+[17:56:25] JeanJass LaMenace was killed by func_physbox
+[17:57:13] Raykeno was killed by func_physbox
+[17:57:45] Raykeno was killed by func_physbox
+[17:57:49] JeanJass LaMenace was killed by func_physbox
+[17:58:16] Raykeno was killed by func_physbox
+[17:58:47] Server is shutting down/changing levels.
+
+
+
+[17:58:49] New map: mg_ka_trains_detach
+[17:58:53] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[17:58:54] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 6 seconds).
+[17:59:10] Raykeno: !menu
+[17:59:27] Raykeno: !luarun Player:SetJumpPower(10) 
+[17:59:36] Raykeno was killed by trigger_hurt
+[17:59:59] Raykeno was killed by trigger_hurt
+[18:01:28] JeanJass LaMenace killed Raykeno using player
+[18:01:37] JeanJass LaMenace was killed by trigger_hurt
+[18:02:19] JeanJass LaMenace was killed by trigger_hurt
+[18:03:03] JeanJass LaMenace was killed by trigger_hurt
+[18:03:34] Server is shutting down/changing levels.
+
+
+
+[18:03:36] New map: mg_lucky_bastard_V4
+[18:03:41] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 6 seconds).
+[18:11:51] Client "Raykeno" spawned in server <STEAM_0:0:39526070> (took 496 seconds).
+[18:11:51] Raykeno was killed by trigger_hurt
+[18:12:45] JeanJass LaMenace: !menu
+[18:12:52] JeanJass LaMenace: !menu
+[18:13:16] JeanJass LaMenace mauled Raykeno
+[18:13:32] Raykeno: !ignite JeanJass LaMenace
+[18:13:32] Raykeno was killed by npc_fastzombie
+[18:13:38] JeanJass LaMenace: !menu
+[18:13:48] Raykeno ignited JeanJass LaMenace for 300 seconds
+[18:13:48] Raykeno: !ignite JeanJass
+[18:13:58] Raykeno: !extinct JeanJass
+[18:14:07] JeanJass LaMenace was killed by entityflame
+[18:14:32] JeanJass LaMenace: !forcevote
+[18:14:33] Client "Nooboss317" connected.
+[18:14:35] JeanJass LaMenace: !vote
+[18:14:38] JeanJass LaMenace: !rtv
+[18:15:01] Raykeno: !noclip
+[18:15:05] JeanJass LaMenace: !noclip
+[18:15:14] JeanJass LaMenace killed Raykeno using player
+[18:15:18] (TEAM) JeanJass LaMenace: !noclip
+[18:15:19] JeanJass LaMenace: !rtv
+[18:15:24] Raykeno: !votemap
+[18:15:32] JeanJass LaMenace: !slay all
+[18:15:34] JeanJass LaMenace: !slay
+[18:15:37] Raykeno: !ssaly
+[18:15:40] Raykeno: !sslay
+[18:15:40] JeanJass LaMenace suicided!
+[18:15:40] Raykeno suicided!
+[18:15:40] JeanJass LaMenace slayed Everyone
+[18:15:40] JeanJass LaMenace: !slay *
+[18:15:57] JeanJass LaMenace suicided!
+[18:15:57] Raykeno suicided!
+[18:15:57] JeanJass LaMenace slayed Everyone
+[18:15:57] JeanJass LaMenace: !slay *
+[18:16:03] (TEAM) Raykeno: !menu
+[18:16:10] JeanJass LaMenace suicided!
+[18:16:10] Raykeno suicided!
+[18:16:10] JeanJass LaMenace slayed Everyone
+[18:16:10] JeanJass LaMenace: !slay *
+[18:16:18] JeanJass LaMenace suicided!
+[18:16:18] Raykeno suicided!
+[18:16:18] JeanJass LaMenace slayed Everyone
+[18:16:18] JeanJass LaMenace: !slay *
+[18:16:44] JeanJass LaMenace: !menu
+[18:16:48] Server is shutting down/changing levels.
+
+
+
+[18:16:50] New map: mg_piratewars_2011xmas
+[18:16:57] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 7 seconds).
+[18:17:17] Client "Raykeno" connected.
+[18:17:30] JeanJass LaMenace: !menu
+[18:17:47] JeanJass LaMenace changed the map to mg_joes_multifun_v1
+[18:17:47] Server is shutting down/changing levels.
+
+
+
+[18:17:50] New map: mg_joes_multifun_v1
+[18:17:54] Client "Raykeno" connected.
+[18:17:55] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 6 seconds).
+[18:18:53] Client "Raykeno" connected.
+[18:19:03] Dropped "JeanJass LaMenace" from server<STEAM_0:1:79189497>
+[18:19:07] Server is shutting down/changing levels.

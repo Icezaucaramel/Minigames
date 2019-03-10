@@ -1,0 +1,10 @@
+VertexLitGeneric
+{
+	"$baseTexture" "models\weapons\v_models\lama_racer_57\57"
+	"$bumpmap" "models\weapons\v_models\lama_racer_57\57_norm"
+	"$phong" 			"1"
+	"$phongexponent" 		"19"
+	"$phongboost" 			".013"	
+	"$phongfresnelranges"		"[1.5 10.1 7.1]"
+}
+	

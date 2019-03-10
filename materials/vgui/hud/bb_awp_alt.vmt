@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/hud/alt_css_pics/awphud"
+	"$translucent" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+}

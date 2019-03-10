@@ -1,4 +1,4 @@
-//We are gonna use TDM as a skeleton here
+-- We are gonna use TDM as a skeleton here
 
 hook.Add("InitPostEntity", "OITC_Overrides", function()
 	function Minigames:CanStartGame()
@@ -53,7 +53,7 @@ hook.Add("PlayerSpawn", "OITC_Color", function(ply)
 	ply:SetWalkSpeed(Minigames.OneInTheChamber.WalkSpeed)
 	ply:SetRunSpeed(Minigames.OneInTheChamber.RunSpeed)
 	ply:Give("weapon_oitc_pistol")
-	ply:Give("weapon_crowbar")
+	ply:Give("weapon_knife")
 	
 	ply.NumberOfBullets = 1
 	
@@ -86,11 +86,11 @@ hook.Add("RoundEnd", "OITC_Strip", function()
 	end
 end)
 
-//look i'm shit at normal sweps, I have no idea how to make a fuckin melee one so let's cheat
+-- look i'm shit at normal sweps, I have no idea how to make a fuckin melee one so let's cheat
 hook.Add("EntityTakeDamage", "FT_Freee", function(ply,dmginfo)
 	if not ply:IsPlayer() then return end
 	
-	if dmginfo:GetAttacker():IsPlayer() and dmginfo:GetAttacker():GetActiveWeapon():GetClass() == "weapon_crowbar" then
+	if dmginfo:GetAttacker():IsPlayer() and dmginfo:GetAttacker():GetActiveWeapon():GetClass() == "weapon_knife" then
 		dmginfo:ScaleDamage(100)
 		dmginfo:GetAttacker().NumberOfBullets = attacker.NumberOfBullets + 1
 		net.Start("MG_OITC_Notify")

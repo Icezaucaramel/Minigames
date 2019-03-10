@@ -1,4 +1,4 @@
-//We are gonna use TDM as a skeleton here
+-- We are gonna use TDM as a skeleton here
 
 hook.Add("InitPostEntity", "GG_Overrides", function()
 	function Minigames:CanStartGame()
@@ -59,7 +59,7 @@ hook.Add("PlayerSpawn", "GG_Spawn", function(ply)
 		ply:SetPos(tbl:GetPos())
 		
 		ply:Give(Minigames.GG.Weapons[ply.WeaponLvl or 1])
-		ply:Give("weapon_crowbar")
+		ply:Give("weapon_knife")
 	end
 	
 	ply:SetWalkSpeed(Minigames.GG.WalkSpeed)

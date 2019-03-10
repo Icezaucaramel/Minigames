@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/v_models/heat_galil/lower"
+	"$envmap" "env_cubemap"
+	"$envmapmask"  "models/weapons/v_models/heat_galil/lower_ref"
+}

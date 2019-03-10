@@ -10,7 +10,7 @@ Minigames.CaptureTheFlag = Minigames.CaptureTheFlag or {}
 
 -- Credits
 GM.Name		= "Minigames"
-GM.Author	= "Icez&Co"
+GM.Author	= "Nialandres"
 GM.Email	= "i don't do that anymore, fuck off (original creator)"
 GM.Website	= "thisbitchempty.dot.uk.com"
 

@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\v_models\hellspike_ump/raildelees"
+	"$bumpmap" "models\weapons\v_models\hellspike_ump/raildelees norm"
+}

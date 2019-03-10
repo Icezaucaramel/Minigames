@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\weapons\v_models\Pete mac10\mag"
+	"$bumpmap" "models\weapons\v_models\Pete mac10\mag_normal"
+
+}

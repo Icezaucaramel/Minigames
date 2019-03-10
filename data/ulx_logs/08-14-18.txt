@@ -178,3 +178,75 @@
 
 [15:15:03] New map: de_partycity
 [15:15:19] Server is shutting down/changing levels.
+
+
+
+[15:57:07] New map: cs_compound
+[15:57:27] Client "Icez" connected.
+[15:57:35] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 8 seconds).
+[15:58:18] Client "Bot01" connected.
+[15:58:18] Client "Bot01" spawned in server <BOT> (took 75 seconds).
+[15:58:47] Server is shutting down/changing levels.
+
+
+
+[16:19:12] New map: cs_compound
+[16:19:18] Client "Icez" connected.
+[16:19:28] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 10 seconds).
+[16:19:48] Icez: /rtv
+[16:20:21] Server is shutting down/changing levels.
+
+
+
+[16:20:26] New map: de_port
+[16:20:33] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 8 seconds).
+[16:21:46] Server is shutting down/changing levels.
+
+
+
+[16:22:01] New map: cs_compound
+[16:22:05] Client "Icez" connected.
+[16:22:09] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[16:22:22] Icez: !menu
+[16:22:46] Icez changed the map to sb_barrelmania
+[16:22:46] Server is shutting down/changing levels.
+
+
+
+[16:22:47] New map: sb_barrelmania
+[16:23:34] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 48 seconds).
+[16:23:43] Client "Bot01" connected.
+[16:23:43] Client "Bot01" spawned in server <BOT> (took 57 seconds).
+[16:23:56] Client "Bot02" connected.
+[16:23:56] Client "Bot02" spawned in server <BOT> (took 70 seconds).
+[16:24:24] Client "Bot03" connected.
+[16:24:24] Client "Bot03" spawned in server <BOT> (took 98 seconds).
+[16:24:42] Dropped "Icez" from server<STEAM_0:1:79189497>
+[16:24:42] Dropped "Bot01" from server<BOT>
+[16:24:42] Dropped "Bot02" from server<BOT>
+[16:24:42] Dropped "Bot03" from server<BOT>
+[16:24:46] Server is shutting down/changing levels.
+
+
+
+[17:00:36] New map: cs_compound
+[17:01:21] Client "Icez" connected.
+[17:01:26] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[17:02:04] Server is shutting down/changing levels.
+
+
+
+[17:02:52] New map: cs_compound
+[17:03:06] Client "Icez" connected.
+[17:03:10] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[17:03:19] Client "Bot01" connected.
+[17:03:19] Client "Bot01" spawned in server <BOT> (took 28 seconds).
+[17:03:38] Client "Bot02" connected.
+[17:03:38] Client "Bot02" spawned in server <BOT> (took 47 seconds).
+[17:05:50] Icez killed Bot02 using player
+[17:06:05] Icez killed Bot02 using player
+[17:06:14] Icez killed Bot01 using player
+[17:06:19] Dropped "Icez" from server<STEAM_0:1:79189497>
+[17:06:19] Dropped "Bot01" from server<BOT>
+[17:06:19] Dropped "Bot02" from server<BOT>
+[17:07:25] Server is shutting down/changing levels.

@@ -30,7 +30,7 @@ function ENT:Draw()
 		ang:RotateAroundAxis( ang:Right(), 90 )
 		
 		cam.Start3D2D(pos+Vector(0,0,-10), Angle( 0, ang.y, 90 ), 0.25 )
-			draw.DrawText("Press E on me!", "Coolvetica40", 2, 2, Color(34,167,240), TEXT_ALIGN_CENTER )
+			draw.DrawText("Appuie sur E !", "Coolvetica40", 2, 2, Color(34,167,240), TEXT_ALIGN_CENTER )
 		cam.End3D2D()
 	end
 	

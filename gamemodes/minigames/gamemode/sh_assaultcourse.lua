@@ -6,7 +6,7 @@ hook.Add("PlayerSpawn", "Speed_AC", function(ply)
 	ply:SetWalkSpeed(Minigames.AssaultCourse.WalkSpeed)
 	ply:SetWalkSpeed(Minigames.AssaultCourse.RunSpeed)
 	if ply:Team() == TEAM_BLUE then
-		ply:Give("weapon_crowbar")
+		ply:Give("weapon_knife")
 	end
 end)
 

@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\weapons\v_models\Pete mac10\grip"
+	"$bumpmap" "models\weapons\v_models\Pete mac10\grip_normal"
+
+}

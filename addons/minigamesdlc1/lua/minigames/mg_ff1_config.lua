@@ -1,4 +1,4 @@
-Minigames.FastDL_DLC = false //Should this DLC use workshop or fastDL for download?
+Minigames.FastDL_DLC = true --Should this DLC use workshop or fastDL for download?
 
 Minigames.OneInTheChamber.Maps = {
 	["Party City"] = "de_partycity",
@@ -10,10 +10,10 @@ Minigames.OneInTheChamber.Maps = {
 
  Minigames.OneInTheChamber.RoundTime = 60*3
  Minigames.OneInTheChamber.NumberOfRounds = 5
- Minigames.OneInTheChamber.WalkSpeed = 300
- Minigames.OneInTheChamber.RunSpeed = 350
+ Minigames.OneInTheChamber.WalkSpeed = 275
+ Minigames.OneInTheChamber.RunSpeed = 300
 
-//////////////////////////////////////////////////////////
+--
  
 Minigames.VIP.Maps = {
 	["Bullet Theory"] = "cs_bulletheory",
@@ -29,13 +29,13 @@ Minigames.VIP.Maps = {
 Minigames.VIP.RoundTime = 60*3
 Minigames.VIP.NumberOfRounds = 5
 
-Minigames.VIP.RespawnTime = 5
+Minigames.VIP.RespawnTime = 6
 
-Minigames.VIP.WalkSpeed = 300
-Minigames.VIP.RunSpeed = 330
+Minigames.VIP.WalkSpeed = 275
+Minigames.VIP.RunSpeed = 280
 
 
- //////////////////////////////////////////////////////////
+ --
  
 Minigames.FreezeTag.Maps = {
 	["Snow Arena"] = "ft_snowarena",
@@ -52,10 +52,10 @@ Minigames.FreezeTag.NumberOfRounds = 5
 Minigames.FreezeTag.Weapons = {
 	"weapon_tmp",
 	"weapon_deagle",
-	"weapon_crowbar"
+	"weapon_knife"
 }
 
- //////////////////////////////////////////////////////////
+--
 
 Minigames.GG.Maps = {
 	["Hedgeworld"] = "gg_hedgeworld",
@@ -69,13 +69,13 @@ Minigames.GG.RoundTime = 60*5
 Minigames.GG.NumberOfRounds = 2
 Minigames.GG.RespawnTime = 5
 
-Minigames.GG.SpawnProtection = 5 //Set to 0 or a negative number to disable spawn protection - enables god mode on the user for x seconds
-Minigames.GG.WinnerPoints = 100 //How many Points should the player who wins the round get?
+Minigames.GG.SpawnProtection = 3 --Set to 0 or a negative number to disable spawn protection - enables god mode on the user for x seconds
+Minigames.GG.WinnerPoints = 100 --How many Points should the player who wins the round get?
 
-Minigames.GG.WalkSpeed = 300
-Minigames.GG.RunSpeed = 330
+Minigames.GG.WalkSpeed = 275
+Minigames.GG.RunSpeed = 275
 
-Minigames.GG.Weapons = { //Order of weapons that players are given
+Minigames.GG.Weapons = { --Order of weapons that players are given
 	"weapon_fiveseven",
 	"weapon_usp",
 	"weapon_deagle",
@@ -87,7 +87,7 @@ Minigames.GG.Weapons = { //Order of weapons that players are given
 	"weapon_aug",
 	"weapon_mac10",
 	"weapon_famas",
-	"weapon_crowbar",
+	"weapon_knife",
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////
+--

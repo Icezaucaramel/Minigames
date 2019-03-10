@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$baseTexture" "models\weapons\v_models\Famas\stockgrungesharp"
+	"$bumpmap" "Models\Weapons\V_Models\Famas\stockgrungesharp_normal"
+
+}

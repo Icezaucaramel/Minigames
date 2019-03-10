@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\v_models\Havoc deagle\main"
+      "$bumpmap" "models\weapons\v_models\Havoc Deagle\main_norm"
+}

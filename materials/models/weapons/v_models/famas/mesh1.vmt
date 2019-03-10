@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$baseTexture" "models\weapons\v_models\Famas\uppersharp"
+	"$bumpmap" "Models\Weapons\V_Models\Famas\uppersharp_normal"
+
+}
