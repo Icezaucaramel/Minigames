@@ -226,10 +226,10 @@ end
 
 function GM:PlayerSpawn(ply)
 
-	ply:SetModel(ply.PlayerModel or "models/player/kleiner.mdl")
+	ply:SetModel(ply.PlayerModel or "models/player/arctic.mdl")
 
 	if ply:GetModel() == "models/player.mdl" then
-		ply.PlayerModel = "models/player/kleiner.mdl"
+		ply.PlayerModel = "models/player/arctic.mdl"
 		ply:SetModel(ply.PlayerModel)
 		print("[minigames] you shouldn't see this message!")
 	end	

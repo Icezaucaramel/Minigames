@@ -24,7 +24,7 @@ function GM:CreateTeams()
 	team.SetUp(TEAM_BLUE, "Blue", Color(34,167,240), true)  
 	team.SetSpawnPoint(TEAM_BLUE, {"info_player_counterterrorist"})
 	
-	team.SetUp(TEAM_RED, "Red", Color(242,38,19), false)  
+	team.SetUp(TEAM_RED, "Red", Color(242,38,19), true)  
 	team.SetSpawnPoint(TEAM_RED, {"info_player_terrorist"}) 	
 
     team.SetUp(TEAM_SPECTATOR, "Spectators", Color(200,200,200), true)  

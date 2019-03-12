@@ -10,6 +10,7 @@ Minigames.AssaultCourse.Maps = {
 	["So High"] = "mg_sohigh_course_v3",
 	["Escape Prison"] = "mg_escape_prison_beta",
 	["Compound"] = "mg_hn_compoundcourse2",
+	["Ruinz Trap"] = "mg_ruinztrap_course_v3",	
 }
 -- 
 
@@ -22,17 +23,18 @@ Minigames.FreeForAll.Maps = {
 	["Jumper"] = "mg_jumper_fix2",
 	["Sweeper Nature"] = "mg_Sweeper_Nature",
 	["Sweeper"] = "mg_sweeper",
+	["Trains"] = "mg_ka_trains_detach"
 }
 --
 --TEAM DEATHMATCH
 --Players are put onto two teams and given random weapons each round and the winning is last standing team.
 Minigames.TeamDeathmatch.Maps = {
 	["Pushcircle Night"] = "mg_pushcircle_night",
-	["Trains"] = "mg_ka_trains_detach",
 	["Hello Kitty Arena"] = "mg_hello_kitty_arena_v1b",
 	["Omahabeach"] = "mg_fun_omahabeach_2010",
 	["Pirate Wars"] = "mg_piratewars_2011xmas",
 	["Castlewars"] = "mg_ss_castlewars",
+	["Ski Moutain"] = "mg_ski_mountain_resort_fix",
 }
 --
 
@@ -52,6 +54,12 @@ Minigames.TeamSurvival.Maps = {
 	["Lukcy Bastard"] = "mg_lucky_bastard_V4",
 	["Musicalrooms"] = "musicalrooms_b2_noknifes",
 	["Hellz Multigame"] = "mg_hellz_multigame_2012_fix",
+    ["Color Multigame"] = "mg_color_multigames_v2_fix",
+    ["Grands Multigame"] = "mg_grands_multigames_2013_fix",
+    ["Lego Multigame"] = "mg_lego_multigames_v2",
+    ["Galaxy Multigame"] = "mg_lt_galaxy_v5",
+    ["Pauls Multigame"] = "mg_pauls_multigames_v2_fix",
+    ["Yolo Multigame"] = "mg_YOLO_multigames_v1",
 }
 --
 

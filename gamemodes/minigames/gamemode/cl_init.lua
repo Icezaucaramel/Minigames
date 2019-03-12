@@ -1,4 +1,4 @@
-include("shared.lua")
+﻿include("shared.lua")
 include("config_maps.lua")
 include("ply_extension.lua")
 include("cl_networkstrings.lua")

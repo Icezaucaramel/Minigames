@@ -157,5 +157,5 @@ end)
 net.Receive("MG_NotifyScramble", function()
 	local ply = net.ReadString()
 	
-	chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(67,191,227), ply, Color(255,255,255), "à mélanger les équipes!")
+	chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(67,191,227), ply, Color(255,255,255), "à mélangé les équipes!")
 end)

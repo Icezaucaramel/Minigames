@@ -26,7 +26,7 @@ end
 function ENT:Touch(ply)
 	if self.PickedUp then return end
 	
-	if ply:Team() != self.TeamID then
+	if ply:Team() == self.TeamID then 
 		self:SetCollisionGroup(COLLISION_GROUP_WEAPON)
 		self.PickedUp = true
 		Minigames.CaptureTheFlag.Holders[self.TeamID] = ply

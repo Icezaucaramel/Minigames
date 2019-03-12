@@ -62,7 +62,7 @@ SWEP.RunSightsAng = Vector(-25.577, 0, 0)
 
 SWEP.Slash = 1
 
-SWEP.Primary.Sound	= Sound("Weapon_Knife.Slash") -- woosh
+SWEP.Primary.Sound	= ("Weapon_Knife.slash") -- woosh
 SWEP.KnifeShink = ("Weapon_Knife.HitWall")
 SWEP.KnifeSlash = ("Weapon_Knife.Hit")
 SWEP.KnifeStab = ("Weapon_Knife.Stab")
@@ -89,7 +89,7 @@ function SWEP:PrimaryAttack()
 				vm:SetSequence(vm:LookupSequence("midslash2"))
 				self.Slash = 1
 			end --if it looks stupid but works, it aint stupid!
-			self.Weapon:EmitSound(self.Primary.Sound)//slash in the wind sound here
+			self.Weapon:EmitSound(self.Primary.Sound)-- slash in the wind sound here
 			timer.Create("cssslash", .15, 1, function() if not IsValid(self) then return end
 				if IsValid(self.Owner) and IsValid(self.Weapon) then 
 					self:PrimarySlash() 
@@ -122,8 +122,8 @@ function SWEP:PrimarySlash()
 				if slashtrace.Entity == nil then return end
 				targ = slashtrace.Entity
 				if targ:IsPlayer() or targ:IsNPC() then
-					//find a way to splash a little blood
-					self.Weapon:EmitSound(self.KnifeSlash)//stab noise
+					-- find a way to splash a little blood
+					self.Weapon:EmitSound(self.KnifeSlash) -- stab noise
 					paininfo = DamageInfo()
 					paininfo:SetDamage(pain)
 					paininfo:SetDamageType(DMG_SLASH)
@@ -132,7 +132,7 @@ function SWEP:PrimarySlash()
 					paininfo:SetDamageForce(slashtrace.Normal *35000)
 					if SERVER then targ:TakeDamageInfo(paininfo) end
 				else
-					self.Weapon:EmitSound(self.KnifeShink)//SHINK!
+					self.Weapon:EmitSound(self.KnifeShink) -- SHINK!
 					look = self.Owner:GetEyeTrace()
 					util.Decal("ManhackCut", look.HitPos + look.HitNormal, look.HitPos - look.HitNormal )
 				end
@@ -211,9 +211,9 @@ function SWEP:Stab()
 					paininfo:SetInflictor(self.Weapon)
 					paininfo:SetDamageForce(stabtrace2.Normal *75000)
 					if SERVER then targ:TakeDamageInfo(paininfo) end
-					self.Weapon:EmitSound(self.KnifeStab)//stab noise
+					self.Weapon:EmitSound(self.KnifeStab)--stab noise
 				else
-					self.Weapon:EmitSound(self.KnifeShink)//SHINK!
+					self.Weapon:EmitSound(self.KnifeShink)-- SHINK!
 					look = self.Owner:GetEyeTrace()
 					util.Decal("ManhackCut", look.HitPos + look.HitNormal, look.HitPos - look.HitNormal )
 				end

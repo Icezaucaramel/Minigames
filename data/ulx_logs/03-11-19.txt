@@ -1,0 +1,336 @@
+<Logging continued from "data/ulx_logs/03-10-19.txt">
+[00:01:22] Server is shutting down/changing levels.
+
+
+
+[00:01:39] New map: cs_compound
+[00:01:42] Client "JeanJass LaMenace" connected.
+[00:01:46] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[00:01:55] Client "Bot01" connected.
+[00:01:55] Client "Bot01" spawned in server <BOT> (took 18 seconds).
+[00:01:56] Client "Bot02" connected.
+[00:01:56] Client "Bot02" spawned in server <BOT> (took 19 seconds).
+[00:01:57] Client "Bot03" connected.
+[00:01:57] Client "Bot03" spawned in server <BOT> (took 20 seconds).
+[00:01:57] Bot01 suicided!
+[00:01:57] Client "Bot04" connected.
+[00:01:57] Client "Bot04" spawned in server <BOT> (took 20 seconds).
+[00:02:34] JeanJass LaMenace killed Bot04 using weapon_knife
+[00:02:47] JeanJass LaMenace killed Bot04 using weapon_knife
+[00:02:54] Server is shutting down/changing levels.
+
+
+
+[17:19:53] New map: cs_compound
+[17:20:46] Client "JeanJass LaMenace" connected.
+[17:21:02] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 16 seconds).
+[17:21:13] Client "Bot01" connected.
+[17:21:13] Client "Bot01" spawned in server <BOT> (took 83 seconds).
+[17:21:14] Client "Bot02" connected.
+[17:21:14] Client "Bot02" spawned in server <BOT> (took 84 seconds).
+[17:21:14] Client "Bot03" connected.
+[17:21:14] Client "Bot03" spawned in server <BOT> (took 84 seconds).
+[17:21:15] Bot01 suicided!
+[17:22:05] JeanJass LaMenace killed Bot02 using weapon_knife
+[17:22:24] JeanJass LaMenace killed Bot02 using weapon_knife
+[17:22:33] JeanJass LaMenace: !menu
+[17:22:49] JeanJass LaMenace changed the map to mg_escape_prison_beta
+[17:22:49] Server is shutting down/changing levels.
+
+
+
+[17:22:52] New map: mg_escape_prison_beta
+[17:22:57] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 6 seconds).
+[17:23:33] JeanJass LaMenace was killed by trigger_hurt
+[17:23:48] JeanJass LaMenace was killed by trigger_hurt
+[17:24:28] JeanJass LaMenace was killed by trigger_hurt
+[17:25:13] JeanJass LaMenace was killed by trigger_hurt
+[17:25:43] Server is shutting down/changing levels.
+
+
+
+[17:25:48] New map: cs_office
+[17:25:55] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 9 seconds).
+[17:26:15] Client "Bot04" connected.
+[17:26:15] Client "Bot04" spawned in server <BOT> (took 29 seconds).
+[17:26:16] Client "Bot05" connected.
+[17:26:16] Client "Bot05" spawned in server <BOT> (took 30 seconds).
+[17:26:16] Client "Bot06" connected.
+[17:26:16] Client "Bot06" spawned in server <BOT> (took 30 seconds).
+[17:26:28] Bot04 suicided!
+[17:26:30] JeanJass LaMenace killed Bot05 using player
+[17:26:49] JeanJass LaMenace killed Bot05 using player
+[17:26:54] JeanJass LaMenace suicided!
+[17:27:18] JeanJass LaMenace killed Bot05 using player
+[17:28:10] JeanJass LaMenace killed Bot05 using player
+[17:28:33] JeanJass LaMenace: !menu
+[17:28:55] Dropped "JeanJass LaMenace" from server<STEAM_0:1:79189497>
+[17:28:55] Dropped "Bot04" from server<BOT>
+[17:28:55] Dropped "Bot05" from server<BOT>
+[17:28:55] Dropped "Bot06" from server<BOT>
+[17:29:25] Server is shutting down/changing levels.
+
+
+
+[17:29:28] New map: mg_sohigh_course_v3
+[17:30:26] Client "schinza007" connected.
+
+
+
+[17:42:00] New map: cs_compound
+[17:42:04] Client "JeanJass LaMenace" connected.
+[17:42:10] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 6 seconds).
+[17:44:48] JeanJass LaMenace suicided!
+[17:44:52] Dropped "JeanJass LaMenace" from server<STEAM_0:1:79189497>
+[17:45:07] Server is shutting down/changing levels.
+[17:45:09] Server is shutting down/changing levels.
+
+
+
+[17:45:19] New map: cs_compound
+[17:45:19] Client "JeanJass LaMenace" connected.
+[17:45:24] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[17:45:32] Client "Bot01" connected.
+[17:45:32] Client "Bot01" spawned in server <BOT> (took 15 seconds).
+[17:45:32] Client "Bot02" connected.
+[17:45:32] Client "Bot02" spawned in server <BOT> (took 15 seconds).
+[17:45:33] Client "Bot03" connected.
+[17:45:33] Client "Bot03" spawned in server <BOT> (took 16 seconds).
+[17:45:33] Client "Bot04" connected.
+[17:45:33] Client "Bot04" spawned in server <BOT> (took 16 seconds).
+[17:45:34] Client "Bot05" connected.
+[17:45:34] Client "Bot05" spawned in server <BOT> (took 17 seconds).
+[17:45:34] Client "Bot06" connected.
+[17:45:34] Client "Bot06" spawned in server <BOT> (took 17 seconds).
+[17:45:34] Bot01 suicided!
+[17:45:36] Bot02 suicided!
+[17:45:59] JeanJass LaMenace killed Bot05 using weapon_knife
+[17:46:04] JeanJass LaMenace killed Bot04 using weapon_knife
+[17:46:15] JeanJass LaMenace suicided!
+[17:46:35] JeanJass LaMenace killed Bot05 using player
+[17:46:40] JeanJass LaMenace killed Bot04 using player
+[17:46:43] Dropped "JeanJass LaMenace" from server<STEAM_0:1:79189497>
+[17:46:43] Dropped "Bot01" from server<BOT>
+[17:46:43] Dropped "Bot02" from server<BOT>
+[17:46:43] Dropped "Bot03" from server<BOT>
+[17:46:43] Dropped "Bot04" from server<BOT>
+[17:46:43] Dropped "Bot05" from server<BOT>
+[17:46:43] Dropped "Bot06" from server<BOT>
+[17:46:53] Server is shutting down/changing levels.
+
+
+
+[18:14:27] New map: cs_compound
+[18:14:27] Client "JeanJass LaMenace" connected.
+[18:14:32] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[18:14:41] Client "Bot01" connected.
+[18:14:41] Client "Bot01" spawned in server <BOT> (took 16 seconds).
+[18:14:42] Client "Bot02" connected.
+[18:14:42] Client "Bot02" spawned in server <BOT> (took 17 seconds).
+[18:14:42] Client "Bot03" connected.
+[18:14:42] Client "Bot03" spawned in server <BOT> (took 17 seconds).
+[18:14:43] Client "Bot04" connected.
+[18:14:43] Client "Bot04" spawned in server <BOT> (took 18 seconds).
+[18:14:44] Bot01 suicided!
+[18:15:03] JeanJass LaMenace killed Bot03 using weapon_knife
+[18:15:35] JeanJass LaMenace killed Bot03 using player
+[18:15:43] JeanJass LaMenace killed Bot04 using player
+[18:15:48] JeanJass LaMenace: !rtv
+[18:16:00] JeanJass LaMenace: !menu
+[18:16:15] JeanJass LaMenace changed the map to mg_ruinztrap_course_v3
+[18:16:15] Server is shutting down/changing levels.
+
+
+
+[18:16:17] New map: mg_ruinztrap_course_v3
+[18:16:27] Client "JeanJass LaMenace" connected.
+[18:17:42] Client "JeanJass LaMenace" connected.
+[18:17:47] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[18:17:50] JeanJass LaMenace was killed by trigger_hurt
+[18:17:58] JeanJass LaMenace was killed by trigger_hurt
+[18:18:15] JeanJass LaMenace was killed by trigger_hurt
+[18:19:42] JeanJass LaMenace was killed by func_physbox
+[18:20:20] JeanJass LaMenace was killed by func_movelinear
+[18:20:51] Server is shutting down/changing levels.
+
+
+
+[18:20:52] New map: mg_YOLO_multigames_v1
+[18:20:57] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[18:21:33] Client "Bot05" connected.
+[18:21:33] Client "Bot05" spawned in server <BOT> (took 41 seconds).
+[18:21:34] Client "Bot06" connected.
+[18:21:34] Client "Bot06" spawned in server <BOT> (took 42 seconds).
+[18:21:34] Client "Bot07" connected.
+[18:21:34] Client "Bot07" spawned in server <BOT> (took 42 seconds).
+[18:22:19] Server is shutting down/changing levels.
+
+
+
+[18:22:21] New map: mg_Wolf_Course_v6_F
+[18:22:26] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 6 seconds).
+[18:22:51] JeanJass LaMenace was killed by trigger_hurt
+[18:23:39] JeanJass LaMenace was killed by trigger_hurt
+[18:24:50] JeanJass LaMenace was killed by trigger_hurt
+[18:25:16] JeanJass LaMenace: !menu
+[18:25:39] JeanJass LaMenace was killed by trigger_hurt
+[18:25:45] Server is shutting down/changing levels.
+
+
+
+[18:30:54] New map: cs_compound
+[18:30:54] Client "JeanJass LaMenace" connected.
+[18:30:59] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[18:31:07] Client "Bot01" connected.
+[18:31:07] Client "Bot01" spawned in server <BOT> (took 15 seconds).
+[18:31:08] Client "Bot02" connected.
+[18:31:08] Client "Bot02" spawned in server <BOT> (took 16 seconds).
+[18:31:09] Client "Bot03" connected.
+[18:31:09] Client "Bot03" spawned in server <BOT> (took 17 seconds).
+[18:31:15] Bot01 suicided!
+[18:32:02] JeanJass LaMenace killed Bot03 using weapon_knife
+[18:32:15] JeanJass LaMenace killed Bot02 using weapon_knife
+[18:33:10] Dropped "JeanJass LaMenace" from server<STEAM_0:1:79189497>
+[18:33:10] Dropped "Bot01" from server<BOT>
+[18:33:10] Dropped "Bot02" from server<BOT>
+[18:33:10] Dropped "Bot03" from server<BOT>
+[18:40:43] Server is shutting down/changing levels.
+
+
+
+[18:41:12] New map: cs_compound
+[18:41:13] Client "JeanJass LaMenace" connected.
+[18:41:17] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[18:41:38] Client "Bot01" connected.
+[18:41:38] Client "Bot01" spawned in server <BOT> (took 28 seconds).
+[18:41:39] Client "Bot02" connected.
+[18:41:39] Client "Bot02" spawned in server <BOT> (took 29 seconds).
+[18:42:39] Server is shutting down/changing levels.
+
+
+
+[18:42:51] New map: cs_compound
+[18:47:47] Server is shutting down/changing levels.
+
+
+
+[18:48:35] New map: cs_compound
+[18:48:37] Client "JeanJass LaMenace" connected.
+[18:48:41] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[18:48:48] Client "Bot01" connected.
+[18:48:48] Client "Bot01" spawned in server <BOT> (took 15 seconds).
+[18:48:49] Client "Bot02" connected.
+[18:48:49] Client "Bot02" spawned in server <BOT> (took 16 seconds).
+[18:48:50] Client "Bot03" connected.
+[18:48:50] Client "Bot03" spawned in server <BOT> (took 17 seconds).
+[18:48:50] Bot01 suicided!
+[18:49:19] JeanJass LaMenace killed Bot03 using weapon_knife
+[18:53:17] Server is shutting down/changing levels.
+
+
+
+[18:53:30] New map: cs_compound
+[18:53:52] Client "JeanJass LaMenace" connected.
+[18:53:56] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[18:54:05] Client "Bot01" connected.
+[18:54:05] Client "Bot01" spawned in server <BOT> (took 37 seconds).
+[18:54:06] Client "Bot02" connected.
+[18:54:06] Client "Bot02" spawned in server <BOT> (took 38 seconds).
+[18:54:07] Client "Bot03" connected.
+[18:54:07] Client "Bot03" spawned in server <BOT> (took 39 seconds).
+[18:54:15] Bot01 suicided!
+[18:54:36] JeanJass LaMenace killed Bot03 using weapon_knife
+[18:57:52] Server is shutting down/changing levels.
+
+
+
+[18:58:05] New map: cs_compound
+[18:58:07] Client "JeanJass LaMenace" connected.
+[18:58:11] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[18:58:18] Client "Bot01" connected.
+[18:58:18] Client "Bot01" spawned in server <BOT> (took 15 seconds).
+[18:58:18] Client "Bot02" connected.
+[18:58:18] Client "Bot02" spawned in server <BOT> (took 15 seconds).
+[18:58:19] Client "Bot03" connected.
+[18:58:19] Client "Bot03" spawned in server <BOT> (took 16 seconds).
+[18:58:20] Bot01 suicided!
+[18:58:53] JeanJass LaMenace killed Bot02 using weapon_knife
+[18:59:03] JeanJass LaMenace killed Bot02 using weapon_knife
+[19:00:05] Server is shutting down/changing levels.
+
+
+
+[19:10:03] New map: cs_compound
+[19:10:05] Client "JeanJass LaMenace" connected.
+[19:10:09] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[19:10:18] Client "Bot01" connected.
+[19:10:18] Client "Bot01" spawned in server <BOT> (took 17 seconds).
+[19:10:19] Client "Bot02" connected.
+[19:10:19] Client "Bot02" spawned in server <BOT> (took 18 seconds).
+[19:10:19] Client "Bot03" connected.
+[19:10:19] Client "Bot03" spawned in server <BOT> (took 18 seconds).
+[19:10:20] Bot01 suicided!
+[19:19:44] Server is shutting down/changing levels.
+
+
+
+[19:20:33] New map: cs_compound
+[19:20:35] Client "JeanJass LaMenace" connected.
+[19:20:40] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[19:21:42] Client "Bot01" connected.
+[19:21:42] Client "Bot01" spawned in server <BOT> (took 71 seconds).
+[19:21:43] Client "Bot02" connected.
+[19:21:43] Client "Bot02" spawned in server <BOT> (took 72 seconds).
+[19:21:43] Client "Bot03" connected.
+[19:21:43] Client "Bot03" spawned in server <BOT> (took 72 seconds).
+[19:21:44] Bot01 suicided!
+[19:22:14] JeanJass LaMenace killed Bot03 using weapon_knife
+[19:22:16] Dropped "JeanJass LaMenace" from server<STEAM_0:1:79189497>
+[19:22:16] Dropped "Bot01" from server<BOT>
+[19:22:16] Dropped "Bot02" from server<BOT>
+[19:22:16] Dropped "Bot03" from server<BOT>
+[19:59:26] Server is shutting down/changing levels.
+
+
+
+[23:20:07] New map: cs_compound
+[23:20:10] Client "JeanJass LaMenace" connected.
+[23:20:17] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 7 seconds).
+[23:20:25] Client "Bot01" connected.
+[23:20:25] Client "Bot01" spawned in server <BOT> (took 21 seconds).
+[23:20:26] Client "Bot02" connected.
+[23:20:26] Client "Bot02" spawned in server <BOT> (took 22 seconds).
+[23:20:27] Client "Bot03" connected.
+[23:20:27] Client "Bot03" spawned in server <BOT> (took 23 seconds).
+[23:20:28] Bot01 suicided!
+[23:24:07] JeanJass LaMenace killed Bot02 using player
+[23:24:27] JeanJass LaMenace killed Bot03 using player
+[23:34:27] Server is shutting down/changing levels.
+
+
+
+[23:34:37] New map: cs_compound
+[23:34:42] Client "JeanJass LaMenace" connected.
+[23:34:47] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[23:35:02] Client "Bot01" connected.
+[23:35:02] Client "Bot01" spawned in server <BOT> (took 27 seconds).
+[23:35:02] Client "Bot02" connected.
+[23:35:02] Client "Bot02" spawned in server <BOT> (took 27 seconds).
+[23:35:03] Client "Bot03" connected.
+[23:35:03] Client "Bot03" spawned in server <BOT> (took 28 seconds).
+[23:35:04] Bot01 suicided!
+[23:37:23] JeanJass LaMenace killed Bot02 using weapon_knife
+[23:50:04] Client "Cwa Rottweila's" connected.
+[23:50:11] Client "Daylonsillo" connected.
+[23:51:19] Server is shutting down/changing levels.
+
+
+
+[23:51:35] New map: cs_compound
+[23:51:35] Client "JeanJass LaMenace" connected.
+[23:51:40] Client "JeanJass LaMenace" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[23:51:47] Client "Bot01" connected.
+[23:51:47] Client "Bot01" spawned in server <BOT> (took 14 seconds).
+[23:51:49] Client "Bot02" connected.
+[23:51:49] Client "Bot02" spawned in server <BOT> (took 16 seconds).
+<Logging continued in "data/ulx_logs/03-12-19.txt">

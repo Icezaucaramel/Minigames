@@ -94,7 +94,7 @@ function Minigames:LoadGamemodeVotes()
 				local map = table.Random(Minigames:DefineVoteInfo(winning_key))
 				table.insert(tbl, map)
 				
-				//ABSOLUTELY DISGUSTING
+				-- ABSOLUTELY DISGUSTING
 				--table remove was being a silly billy
 				if Minigames:DefineVoteInfo(winning_key)[table.KeyFromValue(Minigames:DefineVoteInfo(winning_key), map)] then
 					Minigames:DefineVoteInfo(winning_key)[table.KeyFromValue(Minigames:DefineVoteInfo(winning_key), map)] = nil
@@ -146,7 +146,7 @@ function Minigames:LoadWinningMap()
 	timer.Simple(2, function()
 		print("[MINIGAMES] " .. winning_key .. " could not load! Missing from /maps. Changing to "..Minigames.FallbackMap.." instead.")
 		for k, v in pairs(player.GetAll()) do
-			v:ChatPrint("[MINIGAMES] " .. winning_key .. " ne peut pas charger! Missing from /maps. Changing to "..Minigames.FallbackMap.." instead.")
+			v:ChatPrint("[MINIGAMES] " .. winning_key .. " could not load! Missing from /maps. Changing to "..Minigames.FallbackMap.." instead.")
 		end
 		RunConsoleCommand("changelevel", Minigames.FallbackMap)
 	end)

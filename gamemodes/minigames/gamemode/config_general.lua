@@ -6,7 +6,7 @@ Minigames.PointsPerKill = 10 -- How many Pointshop points should players get?
 -- Misc
 Minigames.GamevoteTimer = 15 -- How many seconds do players have to vote?
 Minigames.MapvoteTimer = 15 -- How many seconds do players have to vote?
-Minigames.EnableFastDL = false -- Set to true to use fastdl, instead of Workshop download
+Minigames.EnableFastDL = true -- Set to true to use fastdl, instead of Workshop download
 
 -- Addon support
 Minigames.DefaultHUD = true -- Change to false if you're using a custom/different hud
@@ -26,14 +26,14 @@ Minigames.AssaultCourse.WinningPoints = 100 -- How many points should a player g
 Minigames.TwoVersusAll.WinningPoints = 20 -- How many points should the winning team get in TVA?
 
 -- Number of Rounds
-Minigames.AssaultCourse.NumberOfRounds = 4 -- How many rounds of AC should we play?
+Minigames.AssaultCourse.NumberOfRounds = 8 -- How many rounds of AC should we play?
 Minigames.FreeForAll.NumberOfRounds = 10 -- How many rounds of FFA should we play?
-Minigames.TeamDeathmatch.NumberOfRounds = 5 -- How many rounds of TDM should we play?
-Minigames.TeamSurvival.NumberOfRounds = 6 -- How many rounds of TS should we play?
-Minigames.TwoVersusAll.NumberOfRounds = 6 -- How many rounds of TVA should we play?
+Minigames.TeamDeathmatch.NumberOfRounds = 6 -- How many rounds of TDM should we play?
+Minigames.TeamSurvival.NumberOfRounds = 10 -- How many rounds of TS should we play?
+Minigames.TwoVersusAll.NumberOfRounds = 10 -- How many rounds of TVA should we play?
 
 -- Round time
-Minigames.AssaultCourse.RoundTime = 60*5
+Minigames.AssaultCourse.RoundTime = 60*6
 Minigames.TeamDeathmatch.RoundTime = 60*3
 Minigames.TwoVersusAll.RoundTime = 60*3
 Minigames.TeamSurvival.RoundTime = 60*4
