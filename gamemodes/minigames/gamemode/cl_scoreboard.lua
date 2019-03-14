@@ -41,13 +41,13 @@ AddScoreboardButton(5, {
 AddScoreboardButton(6, {
 	ButtonName = "Group",
 	Icon = "materials/niandralades/minigames/community.png",
-	Function = "http://www.google.co.uk"
+	Function = "https://forum.lesserruriers.fr/index.php"
 })
 
 AddScoreboardButton(7, {
 	ButtonName = "Donate",
 	Icon = "materials/niandralades/minigames/donate.png",
-	Function = "http://www.google.co.uk"
+	Function = "https://forum.lesserruriers.fr/index.php"
 })
 
 
@@ -73,8 +73,8 @@ end
 function Minigames:GetSpecsNGhosts()
 	local tbl = {}
 	for k, v in pairs(player.GetAll()) do
-		if v:Team() != TEAM_BLUE then
-			if v:Team() != TEAM_RED then
+		if v:Team() ~= TEAM_BLUE then
+			if v:Team() ~= TEAM_RED then
 				table.insert(tbl,v)
 			end
 		end
@@ -114,7 +114,7 @@ function Minigames:ShowScoreboard()
 	misc_info_dpanel:SetPos(0,frame:GetTall()-misc_info_dpanel:GetTall())
 	misc_info_dpanel.Paint = function()
 		draw.RoundedBox(0,0,0,host_dpanel:GetWide(),host_dpanel:GetTall(),Color(0,0,0,100))
-		draw.DrawText(game.GetMap() .. " | " .. GetGlobalString("Minigames_CurrentGamemode") .. " | " .. maths .. " round(s) left", "NexaLight35",misc_info_dpanel:GetWide()/2,7, Color(255, 255, 255, 255),TEXT_ALIGN_CENTER)
+		draw.DrawText(game.GetMap() .. " | " .. GetGlobalString("Minigames_CurrentGamemode") .. " | " .. maths .. " rounds restants", "NexaLight35",misc_info_dpanel:GetWide()/2,7, Color(255, 255, 255, 255),TEXT_ALIGN_CENTER)
 	end
 	
 	local ply_info = vgui.Create("DPanel", frame)
@@ -166,7 +166,7 @@ function Minigames:ShowScoreboard()
 	specnum.Paint = function()
 		draw.RoundedBox(0,0,0,specnum:GetWide(),specnum:GetTall(),Color(216,52,50,150))
 		draw.DrawText(#Minigames:GetSpecsNGhosts(), "NexaLight55",15,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
-		draw.DrawText("Spectators", "NexaLight25",50,20, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
+		draw.DrawText("Spectateurs", "NexaLight25",50,20, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
 	end
 	
 	
@@ -184,7 +184,7 @@ function Minigames:ShowScoreboard()
 	deaths:SetSize(64,64)
 	deaths.Paint = function()
 		draw.RoundedBox(0,0,0,deaths:GetWide(),deaths:GetTall(),Color(216,52,50,150))
-		draw.DrawText("Deaths", "NexaLight15",deaths:GetWide()/2,deaths:GetTall()-20, Color(255, 255, 255, 255),TEXT_ALIGN_CENTER)
+		draw.DrawText("Morts", "NexaLight15",deaths:GetWide()/2,deaths:GetTall()-20, Color(255, 255, 255, 255),TEXT_ALIGN_CENTER)
 		draw.DrawText(LocalPlayer():Deaths(), "NexaLight40",deaths:GetWide()/2,5, Color(255, 255, 255, 255),TEXT_ALIGN_CENTER)
 	end
 	
@@ -196,7 +196,7 @@ function Minigames:ShowScoreboard()
 		team_2_header:SetPos(0,host_dpanel:GetTall()+spacing)
 		team_2_header.Paint = function()
 			draw.RoundedBox(0,0,0,team_2_header:GetWide(),team_2_header:GetTall(),Color(0,0,0,100))
-			draw.DrawText("Blue", "NexaLight35",5,10, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
+			draw.DrawText("Bleu", "NexaLight35",5,10, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
 			draw.DrawText(team.GetScore(2), "NexaLight40",team_2_header:GetWide()-5,7, Color(255, 255, 255, 255),TEXT_ALIGN_RIGHT)
 		end
 		
@@ -205,7 +205,7 @@ function Minigames:ShowScoreboard()
 		team_3_header:SetPos(team_2_header:GetWide()+spacing,host_dpanel:GetTall()+spacing)
 		team_3_header.Paint = function()
 			draw.RoundedBox(0,0,0,team_3_header:GetWide(),team_3_header:GetTall(),Color(0,0,0,100))
-			draw.DrawText("Red", "NexaLight35",team_3_header:GetWide()-2-5,10, Color(255, 255, 255, 255),TEXT_ALIGN_RIGHT)
+			draw.DrawText("Rouge", "NexaLight35",team_3_header:GetWide()-2-5,10, Color(255, 255, 255, 255),TEXT_ALIGN_RIGHT)
 			draw.DrawText(team.GetScore(3), "NexaLight40",5,7, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
 		end
 			
@@ -214,9 +214,9 @@ function Minigames:ShowScoreboard()
 		team_2_panel:SetSize(team_2_header:GetWide(),26)
 		team_2_panel.Paint = function()
 			draw.RoundedBox(0,0,0,team_2_panel:GetWide(),team_2_panel:GetTall(),Color(65, 131, 215,150))
-			draw.DrawText("NAME", "NexaLight20",5,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
+			draw.DrawText("PSEUDO", "NexaLight20",5,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
 			draw.DrawText("KILLS", "NexaLight20",team_2_panel:GetWide()/2-30,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
-			draw.DrawText("DEATHS", "NexaLight20",team_2_panel:GetWide()/2+50,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
+			draw.DrawText("MORTS", "NexaLight20",team_2_panel:GetWide()/2+50,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
 			draw.DrawText("PING", "NexaLight20",team_2_panel:GetWide()-20,5, Color(255, 255, 255, 255),TEXT_ALIGN_RIGHT)
 			draw.RoundedBox(0,0,25,team_2_panel:GetWide(),1,Color(255,255,255,150))
 		end
@@ -235,10 +235,10 @@ function Minigames:ShowScoreboard()
 			nick_lbl.DoClick = function()
 				if v:IsMuted() then
 					v:SetMuted(false)
-					chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "You've muted ", Color(67,191,227),  v:Nick(), Color(255,255,255), ".")
+					chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "Tu as mute ", Color(67,191,227),  v:Nick(), Color(255,255,255), ".")
 				else
 					v:SetMuted(true)
-					chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "You've un-muted ", Color(67,191,227),  v:Nick(), Color(255,255,255), ".")
+					chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "Tu as demute ", Color(67,191,227),  v:Nick(), Color(255,255,255), ".")
 				end
 			end
 			nick_lbl:SizeToContents()
@@ -263,9 +263,9 @@ function Minigames:ShowScoreboard()
 		team_3_panel:SetSize(team_2_header:GetWide()+spacing,26)
 		team_3_panel.Paint = function()
 			draw.RoundedBox(0,0,0,team_3_panel:GetWide(),team_3_panel:GetTall(),Color(223,32,1,150))
-			draw.DrawText("NAME", "NexaLight20",5,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
+			draw.DrawText("PSEUDO", "NexaLight20",5,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
 			draw.DrawText("KILLS", "NexaLight20",team_3_panel:GetWide()/2-30,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
-			draw.DrawText("DEATHS", "NexaLight20",team_3_panel:GetWide()/2+50,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
+			draw.DrawText("MORTS", "NexaLight20",team_3_panel:GetWide()/2+50,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
 			draw.DrawText("PING", "NexaLight20",team_3_panel:GetWide()-20,5, Color(255, 255, 255, 255),TEXT_ALIGN_RIGHT)
 			draw.RoundedBox(0,0,25,team_3_panel:GetWide(),1,Color(255,255,255,150))
 		end
@@ -284,10 +284,10 @@ function Minigames:ShowScoreboard()
 			nick_lbl.DoClick = function()
 				if v:IsMuted() then
 					v:SetMuted(false)
-					chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "You've muted ", Color(67,191,227),  v:Nick(), Color(255,255,255), ".")
+					chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "Tu as mute ", Color(67,191,227),  v:Nick(), Color(255,255,255), ".")
 				else
 					v:SetMuted(true)
-					chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "You've un-muted ", Color(67,191,227),  v:Nick(), Color(255,255,255), ".")
+					chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "Tu as demute ", Color(67,191,227),  v:Nick(), Color(255,255,255), ".")
 				end
 			end
 			nick_lbl:SizeToContents()
@@ -309,7 +309,7 @@ function Minigames:ShowScoreboard()
 		team_2_header:SetPos(0,host_dpanel:GetTall()+spacing)
 		team_2_header.Paint = function()
 			draw.RoundedBox(0,0,0,team_2_header:GetWide(),team_2_header:GetTall(),Color(0,0,0,100))
-			draw.DrawText("Blue", "NexaLight35",5,10, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
+			draw.DrawText("Bleu", "NexaLight35",5,10, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
 			draw.DrawText(team.GetScore(2), "NexaLight40",team_2_header:GetWide()-5,7, Color(255, 255, 255, 255),TEXT_ALIGN_RIGHT)
 		end
 	
@@ -318,9 +318,9 @@ function Minigames:ShowScoreboard()
 			team_2_panel:SetSize(team_2_header:GetWide(),26)
 			team_2_panel.Paint = function()
 				draw.RoundedBox(0,0,0,team_2_panel:GetWide(),team_2_panel:GetTall(),Color(65, 131, 215,150))
-				draw.DrawText("NAME", "NexaLight20",5,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
+				draw.DrawText("PSEUDO", "NexaLight20",5,5, Color(255, 255, 255, 255),TEXT_ALIGN_LEFT)
 				draw.DrawText("KILLS", "NexaLight20",team_2_panel:GetWide()-230,5, Color(255, 255, 255, 255),TEXT_ALIGN_RIGHT)
-				draw.DrawText("DEATHS", "NexaLight20",team_2_panel:GetWide()-120,5, Color(255, 255, 255, 255),TEXT_ALIGN_RIGHT)
+				draw.DrawText("MORTS", "NexaLight20",team_2_panel:GetWide()-120,5, Color(255, 255, 255, 255),TEXT_ALIGN_RIGHT)
 				draw.DrawText("PING", "NexaLight20",team_2_panel:GetWide()-30,5, Color(255, 255, 255, 255),TEXT_ALIGN_RIGHT)
 				draw.RoundedBox(0,0,25,team_2_panel:GetWide(),1,Color(255,255,255,150))
 			end
@@ -339,10 +339,10 @@ function Minigames:ShowScoreboard()
 			nick_lbl.DoClick = function()
 				if v:IsMuted() then
 					v:SetMuted(false)
-					chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "You've muted ", Color(67,191,227),  v:Nick(), Color(255,255,255), ".")
+					chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "Tu as mute ", Color(67,191,227),  v:Nick(), Color(255,255,255), ".")
 				else
 					v:SetMuted(true)
-					chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "You've un-muted ", Color(67,191,227),  v:Nick(), Color(255,255,255), ".")
+					chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "Tu as demute ", Color(67,191,227),  v:Nick(), Color(255,255,255), ".")
 				end
 			end
 			nick_lbl:SizeToContents()

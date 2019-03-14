@@ -62,7 +62,7 @@ hook.Add("PreRoundBegin", "CTF_SetUpVar", function()
 	Minigames.CaptureTheFlag.BlueSpawns = {}
 	for k, v in pairs(ents.GetAll()) do
 		if v:GetClass() == "info_player_counterterrorist" then
-			if v:GetPos() != Minigames.CaptureTheFlag.BlueFlag.StartingPos then
+			if v:GetPos() ~= Minigames.CaptureTheFlag.BlueFlag.StartingPos then
 				table.insert(Minigames.CaptureTheFlag.BlueSpawns,v)
 			end
 		end
@@ -79,7 +79,7 @@ hook.Add("PreRoundBegin", "CTF_SetUpVar", function()
 	Minigames.CaptureTheFlag.RedSpawns = {}
 	for k, v in pairs(ents.GetAll()) do
 		if v:GetClass() == "info_player_terrorist" then
-			if v:GetPos() != Minigames.CaptureTheFlag.RedFlag.StartingPos then
+			if v:GetPos() ~= Minigames.CaptureTheFlag.RedFlag.StartingPos then
 				table.insert(Minigames.CaptureTheFlag.RedSpawns,v)
 			end
 		end

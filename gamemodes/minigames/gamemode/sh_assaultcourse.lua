@@ -45,7 +45,7 @@ hook.Add("RoundEnd", "AC_RO", function(winner)
 end)
 
 hook.Add("PlayerShouldTakeDamage", "AC_Null", function(ply,attacker)
-	if attacker:IsPlayer() and ply:IsPlayer() and attacker != ply then
+	if attacker:IsPlayer() and ply:IsPlayer() and attacker ~= ply then
 		return false
 	end
 
@@ -53,7 +53,7 @@ end)
 
 function Minigames:CheckACDeaths()
 
-	if Minigames.RoundState != 1 then return end
+	if Minigames.RoundState ~= 1 then return end
 	
 	if #player.GetActive() < 1 then
 		Minigames:RoundEnd(4)

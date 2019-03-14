@@ -234,7 +234,7 @@ function Minigames:RTVHasFinished(bool)
 end
 
 function Minigames:CheckWinningTeam()
-	if Minigames.RoundState != 1 then return end
+	if Minigames.RoundState ~= 1 then return end
 	if #Minigames:ReturnBlueAlive() <= 0 and #Minigames:ReturnRedAlive() > 0 then
 		Minigames:RoundEnd(3)
 	elseif #Minigames:ReturnBlueAlive() > 0 and #Minigames:ReturnRedAlive() <= 0 then

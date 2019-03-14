@@ -33,13 +33,13 @@ SWEP.AdminSpawnable			= true
 SWEP.FiresUnderwater = false
 
 SWEP.Primary.Sound			= Sound("Weapon_FiveSeven.1")		-- Script that calls the primary fire sound
-SWEP.Primary.RPM			= 500			-- This is in Rounds Per Minute
+SWEP.Primary.RPM			= 200		-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 20		-- Size of a clip
-SWEP.Primary.DefaultClip		= 60		-- Bullets you start with
+SWEP.Primary.DefaultClip		= 420		-- Bullets you start with
 SWEP.Primary.KickUp				= 0.3		-- Maximum up recoil (rise)
 SWEP.Primary.KickDown			= 0.3		-- Maximum down recoil (skeet)
 SWEP.Primary.KickHorizontal		= 0.3		-- Maximum up recoil (stock)
-SWEP.Primary.Automatic			= false		-- Automatic = true; Semi Auto = false
+SWEP.Primary.Automatic			= true	-- Automatic = true; Semi Auto = false
 SWEP.Primary.Ammo			= "pistol"
 
 SWEP.Secondary.IronFOV			= 55		-- How much you 'zoom' in. Less is more! 	

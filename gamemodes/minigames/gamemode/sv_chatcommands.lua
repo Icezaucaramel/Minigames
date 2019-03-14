@@ -81,7 +81,7 @@ function Minigames:DenyAccess(ply)
 end
 
 function Minigames:SetAFK(ply)
-	if ply:Team() != TEAM_SPECTATOR then
+	if ply:Team() ~= TEAM_SPECTATOR then
 		ply:KillSilent()
 		ply:StripWeapons()
 		ply:SetTeam(TEAM_SPECTATOR)

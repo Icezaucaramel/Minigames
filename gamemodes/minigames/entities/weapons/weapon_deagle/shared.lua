@@ -35,10 +35,10 @@ SWEP.FiresUnderwater = false
 SWEP.Primary.Sound			= Sound("Weapon_DEagle.1")		-- Script that calls the primary fire sound
 SWEP.Primary.RPM			= 300			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 7		-- Size of a clip
-SWEP.Primary.DefaultClip		= 28		-- Bullets you start with
-SWEP.Primary.KickUp				= 10		-- Maximum up recoil (rise)
-SWEP.Primary.KickDown			= 1		-- Maximum down recoil (skeet)
-SWEP.Primary.KickHorizontal		= 3		-- Maximum up recoil (stock)
+SWEP.Primary.DefaultClip		= 420		-- Bullets you start with
+SWEP.Primary.KickUp				= 1.05		-- Maximum up recoil (rise)
+SWEP.Primary.KickDown			= 1	-- Maximum down recoil (skeet)
+SWEP.Primary.KickHorizontal		= 0	-- Maximum up recoil (stock)
 SWEP.Primary.Automatic			= false		-- Automatic = true; Semi Auto = false
 SWEP.Primary.Ammo			= "357"
 
@@ -48,7 +48,7 @@ SWEP.data 				= {}				--The starting firemode
 SWEP.data.ironsights			= 1
 
 SWEP.Primary.NumShots	= 1		-- How many bullets to shoot per trigger pull
-SWEP.Primary.Damage		= 25	-- Base damage per bullet
+SWEP.Primary.Damage		= 27	-- Base damage per bullet
 SWEP.Primary.Spread		= .03	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
 SWEP.Primary.IronAccuracy = .02 -- Ironsight accuracy, should be the same for shotguns
 

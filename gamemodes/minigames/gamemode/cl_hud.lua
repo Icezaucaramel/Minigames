@@ -101,20 +101,13 @@ elseif Minigames:IsPlayingTeamSurvival() then
 roundlimit  = Minigames.TeamSurvival.NumberOfRounds
 elseif Minigames:IsPlayingTwoVersusAll() then
 roundlimit  = Minigames.TwoVersusAll.NumberOfRounds
-elseif Minigames:IsPlayingOneInTheChamber() then
-roundlimit  = Minigames.OneInTheChamber.NumberOfRounds
-elseif Minigames:IsPlayingFreezeTag() then
-roundlimit  = Minigames.FreezeTag.NumberOfRounds
-elseif Minigames:IsVIP() then
-roundlimit  = Minigames.VIP.NumberOfRounds
-elseif Minigames:IsGG() then
-roundlimit  = Minigames.GG.NumberOfRounds
+
 end
 
 local w = 111
 local h = 36
 
-draw.SimpleTextOutlined("Round : ".. Minigames.RoundNumber .. "/" .. roundlimit, "DermaLargeround", ScrW()/2 - w/2,48, Color(255, 255, 255, 255),TEXT_ALIGN_CENTER,TEXT_ALIGN_CENTER,2,Color(0,0,0,255))	
+draw.SimpleTextOutlined("Round : ".. Minigames.RoundNumber .. "/" .. Minigames.RoundLimit, "DermaLargeround", ScrW()/2 - w/2,48, Color(255, 255, 255, 255),TEXT_ALIGN_CENTER,TEXT_ALIGN_CENTER,2,Color(0,0,0,255))	
 
 	if Minigames:IsPlayingCaptureTheFlag() then
 		if Minigames.RoundState == 1 or Minigames.RoundState == 0 then

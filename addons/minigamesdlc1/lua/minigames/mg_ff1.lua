@@ -73,12 +73,12 @@ else
 	net.Receive("MG_NotifyPicked", function()
 		local ply = net.ReadEntity()
 		
-		chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(67,191,227), ply, Color(255,255,255), " has been picked as the VIP!")
+		chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(67,191,227), ply, Color(255,255,255), "a été choisit comme le VIP!")
 		if ply != LocalPlayer() then
 			if ply:Team() == LocalPlayer():Team() then
-				chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "Protect ", Color(67,191,227), ply:Nick(), Color(255,255,255), " and get them to the extract point!")
+				chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "Protège ", Color(67,191,227), ply:Nick(), Color(255,255,255), " et emmène le jusqu'au point d'extraction!")
 			else
-				chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "Kill ", Color(67,191,227), ply:Nick(), Color(255,255,255), " and stop them from getting to the extract point!")
+				chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "Tue ", Color(67,191,227), ply:Nick(), Color(255,255,255), " et empèche le d'arriver au point d'extraction!")
 			end
 		else
 			chat.AddText(Color(242,99,91), "[MINIGAMES] ", Color(255,255,255), "You must get to the extract point!")
@@ -108,12 +108,12 @@ else
 	
 		if Minigames.VIP_CS and Minigames.VIP_CS:Alive() then
 			if LocalPlayer() == Minigames.VIP_CS then
-				draw.DrawText("You are the VIP. Get to the extract point!", "Roboto15", ScrW()/2, 100, Color(34,167,240),TEXT_ALIGN_CENTER)
+				draw.DrawText("Tu es le VIP, arrive jusqu'au point d'extraction!", "Roboto15", ScrW()/2, 100, Color(34,167,240),TEXT_ALIGN_CENTER)
 			else
 				if LocalPlayer():Team() == Minigames.VIP_CS:Team() then
-					draw.DrawText("You are protecting: " .. Minigames.VIP_CS:Nick(), "Roboto15", ScrW()/2, 100, Color(34,167,240),TEXT_ALIGN_CENTER)
+					draw.DrawText("Tu protèges: " .. Minigames.VIP_CS:Nick(), "Roboto15", ScrW()/2, 100, Color(34,167,240),TEXT_ALIGN_CENTER)
 				elseif LocalPlayer():Team() == 3 then
-					draw.DrawText("You are hunting: " .. Minigames.VIP_CS:Nick(), "Roboto15", ScrW()/2, 100, Color(242,38,19),TEXT_ALIGN_CENTER)
+					draw.DrawText("Tu Chasses: " .. Minigames.VIP_CS:Nick(), "Roboto15", ScrW()/2, 100, Color(242,38,19),TEXT_ALIGN_CENTER)
 				else
 					draw.DrawText("VIP: " .. Minigames.VIP_CS:Nick(), "Roboto15", ScrW()/2, 100, Color(255, 255, 255, 255),TEXT_ALIGN_CENTER)
 				end
@@ -205,7 +205,7 @@ hook.Add("InitPostEntity", "Minigames_DetectGameOnMap", function()
 		SetGlobalString("Minigames_CurrentGamemode", "OITC")
 		SetGlobalInt("Minigames_RoundTime", Minigames.OneInTheChamber.RoundTime)
 		Minigames.RoundLimit = Minigames.OneInTheChamber.NumberOfRounds
-		Minigames.InfoString = "We're playing One In The Chamber!"
+		Minigames.InfoString = "On joue à One In The Chamber!"
 		print("DLC GAMEMODE RUNNING: " .. GetGlobalString("Minigames_CurrentGamemode"))
 		Minigames.IsPlayingDLC = true
 	elseif Minigames:IsPlayingVIP() then

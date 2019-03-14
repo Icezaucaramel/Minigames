@@ -97,7 +97,7 @@ hook.Add("Initialize", "Minigames_DetectGameOnMap", function()
 		Minigames.RTVUsers = {}
 	end
 	
-	print(string.upper("[minigames] we're playing " .. Minigames:ReturnGamemodeString()))
+	print(string.upper("[minigames] On joue à " .. Minigames:ReturnGamemodeString()))
 
 end)
 

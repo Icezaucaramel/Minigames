@@ -187,11 +187,11 @@ net.Receive("MG_VOTENotif", function()
 	local vote = net.ReadString()
 	local previous_vote = net.ReadString()
 	
-	if #previous_vote > 0 and vote != previous_vote then
+	if #previous_vote > 0 and vote ~= previous_vote then
 		Minigames:VoteNotification(user,previous_vote,false)
 	end
 	
-	if vote != previous_vote then
+	if vote ~= previous_vote then
 		Minigames:VoteNotification(user,vote,true)
 	end
 

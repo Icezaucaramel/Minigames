@@ -33,7 +33,7 @@ end)
 
 function Minigames:CheckFreeForAllWinner()
 
-	if Minigames.RoundState != 1 then return end
+	if Minigames.RoundState ~= 1 then return end
 	
 	if #player.GetActive() == 1 then
 		for k, v in pairs(player.GetActive()) do

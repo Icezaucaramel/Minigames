@@ -44,7 +44,7 @@ net.Receive("Minigames_NotifyRound", function()
 	end
 end)
 
-//KILLING
+-- KILLING
 net.Receive("Minigames_PointsOnKill", function()
 	local attacker = net.ReadString()
 	local ply = net.ReadString()

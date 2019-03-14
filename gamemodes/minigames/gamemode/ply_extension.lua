@@ -110,7 +110,7 @@ function player.GetActive()
 	local tbl = {}
 	
 	for k, v in pairs(player.GetAll()) do
-		if v:Alive() and v:Team() != TEAM_SPECTATOR and v:Team() != TEAM_UNASSIGNED then
+		if v:Alive() and v:Team() ~= TEAM_SPECTATOR and v:Team() ~= TEAM_UNASSIGNED then
 			table.insert(tbl,v)
 		end
 	end

@@ -1,4 +1,4 @@
-﻿include("shared.lua")
+include("shared.lua")
 include("config_maps.lua")
 include("ply_extension.lua")
 include("cl_networkstrings.lua")
@@ -54,7 +54,7 @@ function Minigames:SelectTeams()
 	team_blue:SetPos(0,60)
 	team_blue:SetText("")
 	team_blue.DoClick = function()
-		if LocalPlayer():Team() != TEAM_BLUE then
+		if LocalPlayer():Team() ~= TEAM_BLUE then
 			if Minigames:CanJoinBlue() then
 				net.Start("Team_Select_Serverside")
 					net.WriteString("blue")
@@ -81,15 +81,15 @@ function Minigames:SelectTeams()
 	team_red:SetPos(160,60)
 	team_red:SetText("")
 	team_red.DoClick = function()
-		if LocalPlayer():Team() != TEAM_RED then
+		if LocalPlayer():Team() ~= TEAM_RED then
 			if Minigames:CanJoinRed() then
 				net.Start("Team_Select_Serverside")
 					net.WriteString("red")
 				net.SendToServer()
-				chat.AddText(Color(255,60,60), "[MINIGAMES] ", Color(255,255,255), "Tu as rejoins l'équipe ", Color(98,177,255), "Rouge", Color(255,255,255),"!")
+				chat.AddText(Color(255,60,60), "[MINIGAMES] ", Color(255,255,255), "Tu as rejoins l'équipe ", Color(255,0,0), "Rouge", Color(255,255,255),"!")
 				 Minigames:CloseTeamMenu()
 			else
-				chat.AddText(Color(255,60,60), "[MINIGAMES] ", Color(255,255,255), "Désolé, cette équipe est ", Color(98,177,255), "pleine", Color(255,255,255),"!")
+				chat.AddText(Color(255,60,60), "[MINIGAMES] ", Color(255,255,255), "Désolé, cette équipe est ", Color(255,0,0), "pleine", Color(255,255,255),"!")
 			end
 		else
 			Minigames:CloseTeamMenu()
@@ -108,7 +108,7 @@ function Minigames:SelectTeams()
 	spectator:SetPos(0,frame:GetTall()-50)
 	spectator:SetText("")
 	spectator.DoClick = function()
-		if LocalPlayer():Team() != TEAM_SPECTATOR then
+		if LocalPlayer():Team() ~= TEAM_SPECTATOR then
 			net.Start("Team_Select_Serverside")
 				net.WriteString("spec")
 			net.SendToServer()

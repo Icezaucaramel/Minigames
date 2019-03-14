@@ -58,7 +58,7 @@ if Minigames.EnableFastDL then
 	
 	resource.AddFile("resource/fonts/Nexa Light.otf")
 	
-	//this feels a bit sloppy???
+	--this feels a bit sloppy???
 	
 	for k, v in pairs(misc) do
 		resource.AddFile("materials/niandralades/minigames/" .. v)
@@ -154,7 +154,11 @@ local weapons_tbl = {
 	"weapon_aug",
 	"weapon_g3sg1",
 	"weapon_awp",
-	"weapon_mp5navy"
+	"weapon_mp5",
+	"weapon_g3sg1",
+	"weapon_p90",
+	"weapon_scout",
+	"weapon_ump45",
 }
 
 local seconday_tbl = {
@@ -163,14 +167,14 @@ local seconday_tbl = {
 	"weapon_elite",
 	"weapon_fiveseven",
 	"weapon_glock",
-	"weapon_usp"
+	"weapon_usp",
 }
 
 function Minigames:GiveRandom(ply)
 	if ply:Team() == TEAM_SPECTATOR or ply:Team() == TEAM_UNASSIGNED then return end
 	ply:Give(table.Random(weapons_tbl))
 	ply:Give(table.Random(seconday_tbl))
-	ply:Give("weapon_crowbar")
+	ply:Give("weapon_knife")
 end
 
 function Minigames:ShowTeamSelect(ply)
@@ -250,7 +254,7 @@ end
 
 function GM:PlayerDeath(ply,inflictor,attacker)
 	if Minigames.UsePointshop then
-		if attacker:IsValid() and attacker != ply and attacker:IsPlayer() then
+		if attacker:IsValid() and attacker ~= ply and attacker:IsPlayer() then
 			attacker:PS_GivePoints(Minigames.PointsPerKill)
 			net.Start("Minigames_PointsOnKill")
 				net.WriteString(attacker:Nick())
@@ -258,7 +262,7 @@ function GM:PlayerDeath(ply,inflictor,attacker)
 			net.Send(attacker)	
 		end
 	elseif Minigames.UsePointshop_2 then
-		if attacker:IsValid() and attacker != ply and attacker:IsPlayer() then
+		if attacker:IsValid() and attacker ~= ply and attacker:IsPlayer() then
 			attacker:PS2_AddStandardPoints(Minigames.PointsPerKill, "",true)
 			net.Start("Minigames_PointsOnKill")
 				net.WriteString(attacker:Nick())
