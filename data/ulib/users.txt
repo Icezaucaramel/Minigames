@@ -1,22 +1,22 @@
 "STEAM_0:0:39526070"	
 {
+	"deny"	
+	{
+	}
 	"allow"	
 	{
 	}
 	"name"	"Raykeno"
-	"deny"	
-	{
-	}
 	"group"	"superadmin"
 }
 "STEAM_0:1:79189497"	
 {
+	"name"	"Icez"
 	"deny"	
 	{
 	}
 	"allow"	
 	{
 	}
-	"name"	"Icez"
 	"group"	"superadmin"
 }

@@ -1,125 +1,241 @@
-SWEP.PrintName 		= "Knife"
- 
- 
-SWEP.AdminSpawnable = true  
-SWEP.Spawnable 		= false 
- 
-SWEP.ViewModelFOV 	= 64 
-SWEP.ViewModel 		= "models/weapons/knife.mdl" 
+AddCSLuaFile()
 
- 
-SWEP.AutoSwitchTo 	= false
-SWEP.AutoSwitchFrom = false 
- 
-SWEP.Slot 			= 1 
-SWEP.SlotPos = 1 
-SWEP.HoldType = "Knife" 
- 
-SWEP.FiresUnderwater = true 
+SWEP.HoldType               = "knife"
 
-SWEP.Weight = 5  
- 
-SWEP.DrawCrosshair = true 
- 
-SWEP.Category = "CS:S Weapons" 
- 
-SWEP.DrawAmmo = false  
- 
-SWEP.Gun = ("weapon_knife") -- must be the name of your swep but NO CAPITALS!
-if (GetConVar(SWEP.Gun.."_allowed")) != nil then
-    if not (GetConVar(SWEP.Gun.."_allowed"):GetBool()) then SWEP.Base = "bobs_blacklisted" SWEP.PrintName = SWEP.Gun return end
-    
---//General settings\\
- 
---//PrimaryFire Settings\\ -- C'est le clique gauche BB
-SWEP.Primary.Sound = "knife_deploy1.wav" 
-SWEP.Primary.Damage = 30 
-SWEP.Primary.TakeAmmo = 1 
-SWEP.Primary.ClipSize = 100 
-SWEP.Primary.DefaultClip = 100 
-SWEP.Primary.Spread = 0.001 
-SWEP.Primary.NumberofShots = 1 
-SWEP.Primary.Automatic = false 
-SWEP.Primary.Recoil = 0 
-SWEP.Primary.Delay = 3 
-SWEP.Primary.Force = 1000
---//PrimaryFire settings\\
- 
---//Secondary Fire Variables\\ 
-SWEP.Secondary.NumberofShots = 0 
-SWEP.Secondary.Force = 1000 
-SWEP.Secondary.Spread = 0.001 
-SWEP.Secondary.Sound = "knife_deploy1.wav" .
-SWEP.Secondary.Automatic = false 
-SWEP.Secondary.Recoil = 10 
-SWEP.Secondary.Delay = 3 
-SWEP.Secondary.TakeAmmo = 1 
-SWEP.Secondary.ClipSize = 100 
-SWEP.Secondary.Damage = 0 
-SWEP.Secondary.Magnitude = "0" 
---//Secondary Fire Variables\\
- 
---//SWEP:Initialize\\ 
+if CLIENT then
+   SWEP.PrintName           = "Couteau"
+   SWEP.Slot                = 0
+   SWEP.SlotPos		        = 1
+
+   SWEP.ViewModelFlip       = false
+   SWEP.ViewModelFOV        = 54
+   SWEP.DrawCrosshair       = false
+
+   SWEP.EquipMenuData = {
+      type = "item_weapon",
+      desc = "knife_desc"
+   };
+
+   SWEP.Icon                = "vgui/ttt/icon_knife"
+   SWEP.IconLetter          = "j"
+end
+
+SWEP.Base                   = "weapon_base_mg"
+
+SWEP.UseHands               = true
+SWEP.ViewModel              = "models/weapons/cstrike/c_knife_t.mdl"
+SWEP.WorldModel             = "models/weapons/w_knife_t.mdl"
+
+SWEP.Primary.Damage         = 25
+SWEP.Primary.ClipSize       = -1
+SWEP.Primary.DefaultClip    = -1
+SWEP.Primary.Automatic      = true
+SWEP.Primary.Delay          = 1.1
+SWEP.Primary.Ammo           = "none"
+
+SWEP.Secondary.ClipSize     = -1
+SWEP.Secondary.DefaultClip  = -1
+SWEP.Secondary.Automatic    = true
+SWEP.Secondary.Ammo         = "none"
+SWEP.Secondary.Delay        = 1.4
+SWEP.Secondary.IronFOV			= 0
+SWEP.IsSilent               = true
+
+-- Pull out faster than standard guns
+SWEP.DeploySpeed            = 2
+
+
+SWEP.Primary.ClipSize			= -1
+SWEP.Primary.Damage				= -1
+SWEP.Primary.DefaultClip		= -1
+SWEP.Primary.Automatic			= true
+SWEP.Primary.Ammo				= "none"
+
+
+SWEP.Secondary.ClipSize			= -1
+SWEP.Secondary.DefaultClip		= -1
+SWEP.Secondary.Damage			= -1
+SWEP.Secondary.Automatic		= true
+SWEP.Secondary.Ammo				= "none"
+
+/*---------------------------------------------------------
+Think
+---------------------------------------------------------*/
+function SWEP:Think()
+if self.Idle and CurTime()>=self.Idle then
+self.Idle = nil
+self.Weapon:SendWeaponAnim( ACT_VM_IDLE )
+end
+end
+
+/*---------------------------------------------------------
+Initialize
+---------------------------------------------------------*/
 function SWEP:Initialize() 
-	util.PrecacheSound(self.Primary.Sound) 
-	util.PrecacheSound(self.Secondary.Sound) 
-        self:SetWeaponHoldType( self.HoldType )
+	self:SetWeaponHoldType( "knife" ) 	 
 end 
---//SWEP:Initialize\\
- 
---SWEP:PrimaryFire\\ 
+
+/*---------------------------------------------------------
+Deploy
+---------------------------------------------------------*/
+function SWEP:Deploy()
+	self.Idle = CurTime() + self.Owner:GetViewModel():SequenceDuration()
+	self.Weapon:SendWeaponAnim( ACT_VM_DRAW )
+	self.Weapon:SetNextPrimaryFire(CurTime() + self.Owner:GetViewModel():SequenceDuration())
+	self.Weapon:SetNextSecondaryFire(CurTime() + self.Owner:GetViewModel():SequenceDuration())
+	self.Weapon:EmitSound( "Weapon_Knife.Deploy" )
+	return true
+end
+
+/*---------------------------------------------------------
+PrimaryAttack
+---------------------------------------------------------*/
 function SWEP:PrimaryAttack()
- 
-	if ( !self:CanPrimaryAttack() ) then return end
- 
-	local bullet = {} 
-		bullet.Num = self.Primary.NumberofShots
-		bullet.Src = self.Owner:GetShootPos() 
-		bullet.Dir = self.Owner:GetAimVector() 
-		bullet.Spread = Vector( self.Primary.Spread * 0.1 , self.Primary.Spread * 0.1, 0)
-                
-		bullet.Tracer = 0 
-		bullet.Force = self.Primary.Force 
-		bullet.Damage = self.Primary.Damage 
-		bullet.AmmoType = self.Primary.Ammo 
- 
-	local rnda = self.Primary.Recoil * -1 
-	local rndb = self.Primary.Recoil * math.random(-1, 1) 
- 
-	self:ShootEffects()
- 
-	self.Owner:FireBullets( bullet ) 
-	self:EmitSound(Sound(self.Primary.Sound)) 
-	self.Owner:ViewPunch( Angle( rnda,rndb,rnda ) ) 
-	self:TakePrimaryAmmo(self.Primary.TakeAmmo) 
- 
-	self:SetNextPrimaryFire( CurTime() + self.Primary.Delay )
-	self:SetNextSecondaryFire( CurTime() + self.Primary.Delay ) 
-end 
---//SWEP:PrimaryFire\\
- 
---//SWEP:SecondaryFire\\ 
-function SWEP:SecondaryAttack() 
-	if ( !self:CanSecondaryAttack() ) then return end 
- 
-	local rnda = -self.Secondary.Recoil 
-	local rndb = self.Secondary.Recoil * math.random(-1, 1) 
- 
-	self.Owner:ViewPunch( Angle( rnda,rndb,rnda ) ) //Makes the gun have recoil
-        
- 
-	local eyetrace = self.Owner:GetEyeTrace()
-	self:EmitSound ( self.Secondary.Sound ) //Adds sound
-	self:ShootEffects() 
-	local explode = ents.Create("env_explosion")
-		explode:SetPos( eyetrace.HitPos ) //Puts the explosion where you are aiming
-		explode:SetOwner( self.Owner ) //Sets the owner of the explosion
-		explode:Spawn()
-		explode:SetKeyValue("iMagnitude","175") //Sets the magnitude of the explosion
-		explode:Fire("Explode", 0, 0 ) //Tells the explode entity to explode
-		explode:EmitSound("weapon_AWP.Single", 400, 400 ) //Adds sound to the explosion
- 
-	self:SetNextPrimaryFire( CurTime() + self.Secondary.Delay ) 
-	self:SetNextSecondaryFire( CurTime() + self.Secondary.Delay ) 
-	self:TakePrimaryAmmo(self.Secondary.TakeAmmo) 
-end 
+
+	local tr = {}
+	tr.start = self.Owner:GetShootPos()
+	tr.endpos = self.Owner:GetShootPos() + ( self.Owner:GetAimVector() * 80 )
+	tr.filter = self.Owner
+	tr.mask = MASK_SHOT
+	local trace = util.TraceLine( tr )
+
+	self.Weapon:SetNextPrimaryFire(CurTime() + 0.4)
+	self.Weapon:SetNextSecondaryFire(CurTime() + 1)
+	self.Owner:SetAnimation( PLAYER_ATTACK1 )
+
+	if ( trace.Hit ) then
+
+	local DamageMath = math.random(0,5)
+
+	if DamageMath == 3 then
+
+		dmg = 20
+	else
+
+		dmg = 15
+	end
+
+		if trace.Entity:IsPlayer() or trace.Entity:IsNPC() then
+			self.Weapon:SetNextPrimaryFire(CurTime() + 0.5)
+			self.Weapon:SendWeaponAnim(ACT_VM_MISSCENTER)
+			self.Idle = CurTime() + self.Owner:GetViewModel():SequenceDuration()
+			bullet = {}
+			bullet.Num    = 1
+			bullet.Src    = self.Owner:GetShootPos()
+			bullet.Dir    = self.Owner:GetAimVector()
+			bullet.Spread = Vector(0, 0, 0)
+			bullet.Tracer = 0
+			bullet.Force  = 1
+			bullet.Damage = dmg
+			self.Owner:FireBullets(bullet) 
+			self.Weapon:EmitSound( "Weapon_Knife.Hit" )
+		else
+			bullet = {}
+			bullet.Num    = 1
+			bullet.Src    = self.Owner:GetShootPos()
+			bullet.Dir    = self.Owner:GetAimVector()
+			bullet.Spread = Vector(0, 0, 0)
+			bullet.Tracer = 0
+			bullet.Force  = 1
+			bullet.Damage = dmg
+			self.Owner:FireBullets(bullet)
+			self.Weapon:SetNextPrimaryFire(CurTime() + 0.5)
+			self.Weapon:SendWeaponAnim(ACT_VM_MISSCENTER)
+			self.Idle = CurTime() + self.Owner:GetViewModel():SequenceDuration()
+			self.Weapon:EmitSound( "Weapon_Knife.HitWall" )
+
+		end
+	else
+		self.Weapon:EmitSound("Weapon_Knife.Slash")
+		self.Weapon:SendWeaponAnim(ACT_VM_MISSCENTER)
+		self.Idle = CurTime() + self.Owner:GetViewModel():SequenceDuration()
+	end
+end
+
+function SWEP:EntityFaceBack(ent)
+	local angle = self.Owner:GetAngles().y -ent:GetAngles().y
+	if angle < -180 then angle = 360 +angle end
+	if angle <= 90 and angle >= -90 then return true end
+	return false
+end
+
+/*---------------------------------------------------------
+Reload
+---------------------------------------------------------*/
+function SWEP:SecondaryAttack()
+
+	local tr = {}
+	tr.start = self.Owner:GetShootPos()
+	tr.endpos = self.Owner:GetShootPos() + ( self.Owner:GetAimVector() * 60 )
+	tr.filter = self.Owner
+	tr.mask = MASK_SHOT
+	local trace = util.TraceLine( tr )
+
+	self.Weapon:SetNextPrimaryFire(CurTime() + 0.4)
+	self.Weapon:SetNextSecondaryFire(CurTime() + 1)
+	self.Owner:SetAnimation( PLAYER_ATTACK1 )
+
+	if ( trace.Hit ) then
+
+	local damage
+
+	if self:EntityFaceBack(trace.Entity) then
+
+		damage = 195
+	else
+		damage = 65
+
+	end
+
+		if trace.Entity:IsPlayer() or trace.Entity:IsNPC() then
+			self.Weapon:SendWeaponAnim(ACT_VM_MISSCENTER)
+			self.Idle = CurTime() + self.Owner:GetViewModel():SequenceDuration()
+			bullet = {}
+			bullet.Num    = 1
+			bullet.Src    = self.Owner:GetShootPos()
+			bullet.Dir    = self.Owner:GetAimVector()
+			bullet.Spread = Vector(0, 0, 0)
+			bullet.Tracer = 0
+			bullet.Force  = 1
+			bullet.Damage = damage
+			self.Owner:FireBullets(bullet) 
+			self.Weapon:EmitSound( "Weapon_Knife.Stab" )
+		else
+			bullet = {}
+			bullet.Num    = 1
+			bullet.Src    = self.Owner:GetShootPos()
+			bullet.Dir    = self.Owner:GetAimVector()
+			bullet.Spread = Vector(0, 0, 0)
+			bullet.Tracer = 0
+			bullet.Force  = 1
+			bullet.Damage = 65
+			self.Owner:FireBullets(bullet)
+
+			self.Weapon:SendWeaponAnim(ACT_VM_MISSCENTER)
+			self.Idle = CurTime() + self.Owner:GetViewModel():SequenceDuration()
+			self.Weapon:EmitSound("Weapon_Knife.HitWall")
+
+		end
+	else
+		self.Weapon:EmitSound("Weapon_Knife.Slash")
+		self.Weapon:SendWeaponAnim(ACT_VM_MISSCENTER)
+		self.Idle = CurTime() + self.Owner:GetViewModel():SequenceDuration()
+	end
+end
+
+
+/*---------------------------------------------------------
+DrawWeaponSelection
+---------------------------------------------------------*/
+function SWEP:DrawWeaponSelection(x, y, wide, tall, alpha)
+
+
+	self:PrintWeaponInfo(x + wide + 20, y + tall * 0.95, alpha)
+	-- Print weapon information
+end
+
+function SWEP:DoImpactEffect( tr, nDamageType )
+	util.Decal("ManhackCut", tr.HitPos + tr.HitNormal, tr.HitPos - tr.HitNormal)	
+	return true;
+	
+end

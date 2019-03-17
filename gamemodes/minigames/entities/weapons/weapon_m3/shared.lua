@@ -1,77 +1,171 @@
--- Variables that are used on both client and server
-SWEP.Gun = ("bb_m3")					-- must be the name of your swep
-if (GetConVar(SWEP.Gun.."_allowed")) !== nil then
-	if not (GetConVar(SWEP.Gun.."_allowed"):GetBool()) then
- SWEP.Base = "bobs_blacklisted" 
- SWEP.PrintName = SWEP.Gun return end
+SWEP.Secondary.IronFOV			= 55
+SWEP.Primary.Recoil = 0.5
+SWEP.Primary.NumShots = 1
+SWEP.Primary.Cone = 0.01
 
-end
-SWEP.Category				= "CS:S Weapons"
-SWEP.Author				= ""
-SWEP.Contact				= ""
-SWEP.Purpose				= ""
-SWEP.Instructions				= ""
-SWEP.MuzzleAttachment			= "1" 	-- Should be "1" for CSS models or "muzzle" for hl2 models
-SWEP.PrintName				= "M3 Super 90"		-- Weapon name (Shown on HUD)	
-SWEP.Slot				= 3				-- Slot in the weapon selection menu
-SWEP.SlotPos				= 60		-- Position in the slot
-SWEP.DrawAmmo				= true		-- Should draw the default HL2 ammo counter
-SWEP.DrawWeaponInfoBox			= false		-- Should draw the weapon info box
-SWEP.BounceWeaponIcon   		= 	false	-- Should the weapon icon bounce?
-SWEP.DrawCrosshair			= true		-- set false if you want no crosshair
-SWEP.Weight				= 30			-- rank relative to other weapons. bigger is better
-SWEP.AutoSwitchTo			= true		-- Auto switch to if we pick it up
-SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
-SWEP.HoldType 				= "shotgun"
+AddCSLuaFile( "shared.lua" )
 
-SWEP.ViewModelFOV			= 55
-SWEP.ViewModelFlip			= false
-SWEP.ViewModel				= "models/weapons/cstrike/c_shot_m3super90.mdl"	-- Weapon view model
-SWEP.WorldModel				= "models/weapons/w_shot_m3super90.mdl"	-- Weapon world model
-SWEP.Base 				= "bobs_shotty_base"
-SWEP.Spawnable				= true
-SWEP.UseHands = true
-SWEP.AdminSpawnable			= true
+SWEP.PrintName			= "M3 Super90"			
+SWEP.Slot				= 0
+SWEP.SlotPos			= 1
 
-SWEP.Primary.Sound			= Sound("Weapon_M3.1")		-- script that calls the primary fire sound
-SWEP.Primary.RPM				= 70		-- This is in Rounds Per Minute
-SWEP.Primary.ClipSize			= 8			-- Size of a clip
-SWEP.Primary.DefaultClip			= 75	-- Default number of bullets in a clip
-SWEP.Primary.KickUp			= 5				-- Maximum up recoil (rise)
-SWEP.Primary.KickDown			= 0.8		-- Maximum down recoil (skeet)
-SWEP.Primary.KickHorizontal			= 1	-- Maximum up recoil (stock)
-SWEP.Primary.Automatic			= false		-- Automatic/Semi Auto
-SWEP.Primary.Ammo			= "buckshot"
+SWEP.ViewModelFOV		= 57
+SWEP.ViewModelFlip		= false
 
-SWEP.Secondary.IronFOV			= 60		-- How much you 'zoom' in. Less is more! 
+SWEP.HoldType			= "shotgun"
+SWEP.Base				= "weapon_base_mg"
+SWEP.Category			= "Primary"
 
-SWEP.ShellTime			= .3
+//Primary
+SWEP.Primary.Automatic		= false
+SWEP.Primary.Sound 			= Sound( "Weapon_Shotgun.Single" )
+SWEP.Primary.Recoil = 2
+SWEP.Primary.NumShots = 1
+SWEP.Primary.Cone = 0.01
+SWEP.Primary.Damage = 7
+SWEP.Primary.Delay = 0.95
+SWEP.Primary.ClipSize = 35
+SWEP.Primary.DefaultClip = 105
+SWEP.Shotgun = true
+SWEP.Shots = 6
+SWEP.ClumpSpread = 0.04
 
-SWEP.Primary.NumShots	= 6	-- How many bullets to shoot per trigger pull, AKA pellets
-SWEP.Primary.Damage		= 10	-- Base damage per bullet
-SWEP.Primary.Spread		= .035	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
-SWEP.Primary.IronAccuracy = .035	-- Ironsight accuracy, should be the same for shotguns
--- Because irons don't magically give you less pellet spread!
+SWEP.Spawnable			= false
+SWEP.AdminSpawnable		= true
 
--- Enter iron sight info and bone mod info below
-SWEP.IronSightsPos = Vector(-7.64, -3.225, 3.48)
-SWEP.IronSightsAng = Vector(0.13, 0.089, 0)
-SWEP.SightsPos = Vector(-7.64, -3.225, 3.48)
-SWEP.SightsAng = Vector(0.13, 0.089, 0)
-SWEP.RunSightsPos = Vector(9.843, -16.458, 0)
-SWEP.RunSightsAng = Vector(-5.371, 70, 0)
+SWEP.ViewModel		= "models/weapons/cstrike/c_shot_m3super90.mdl"
+SWEP.WorldModel			= "models/weapons/w_shot_m3super90.mdl"
+
+SWEP.Weight				= 5
+SWEP.AutoSwitchTo		= false
+SWEP.AutoSwitchFrom		= false
+
+SWEP.IronSightsPos = Vector(-6.362, -3.52, 2.64)
+SWEP.IronSightsAng = Vector(-0.159, 0, 0)
+SWEP.SightsPos = Vector(-6.362, -3.52, 2.64)
+SWEP.SightsAng = Vector(-0.159, 0, 0)
+SWEP.RunSightsPos = Vector(9.369, -17.244, -3.689)
+SWEP.RunSightsAng = Vector(6.446, 62.852, 0)
+SWEP.Secondary.IronFOV			= 55
+
+SWEP.reloadtimer = 0
 
 
-if GetConVar("M9KDefaultClip") == nil then
-	print("M9KDefaultClip is missing! You may have hit the lua limit!")
-else
-	if GetConVar("M9KDefaultClip"):GetInt() == -1 then
-		SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize * GetConVar("M9KDefaultClip"):GetInt()
-	end
+function SWEP:SetupDataTables()
+   self:DTVar("Bool", 0, "reloading")
+
+   return self.BaseClass.SetupDataTables(self)
 end
 
-if GetConVar("M9KUniqueSlots") == nil then
-	if not (GetConVar("M9KUniqueSlots"):GetBool()) then 
-		SWEP.SlotPos = 2
-	end
+function SWEP:Reload()
+   self:SetIronsights( false )
+   
+   --if self.Weapon:GetNetworkedBool( "reloading", false ) then return end
+   if self.dt.reloading then return end
+
+   if not IsFirstTimePredicted() then return end
+   
+   if self.Weapon:Clip1() < self.Primary.ClipSize and self.Owner:GetAmmoCount( self.Primary.Ammo ) > 0 then
+      
+      if self:StartReload() then
+         return
+      end
+   end
+
+end
+
+function SWEP:StartReload()
+   --if self.Weapon:GetNWBool( "reloading", false ) then
+   if self.dt.reloading then
+      return false
+   end
+
+   if not IsFirstTimePredicted() then return false end
+
+   self.Weapon:SetNextPrimaryFire( CurTime() + self.Primary.Delay )
+   
+   local ply = self.Owner
+   
+   if not ply or ply:GetAmmoCount(self.Primary.Ammo) <= 0 then 
+      return false
+   end
+
+   local wep = self.Weapon
+   
+   if wep:Clip1() >= self.Primary.ClipSize then 
+      return false 
+   end
+
+   wep:SendWeaponAnim(ACT_SHOTGUN_RELOAD_START)
+
+   self.reloadtimer =  CurTime() + wep:SequenceDuration()
+
+   --wep:SetNWBool("reloading", true)
+   self.dt.reloading = true
+
+   return true
+end
+
+function SWEP:PerformReload()
+   local ply = self.Owner
+   
+   -- prevent normal shooting in between reloads
+   self.Weapon:SetNextPrimaryFire( CurTime() + self.Primary.Delay )
+
+   if not ply or ply:GetAmmoCount(self.Primary.Ammo) <= 0 then return end
+
+   local wep = self.Weapon
+
+   if wep:Clip1() >= self.Primary.ClipSize then return end
+
+   self.Owner:RemoveAmmo( 1, self.Primary.Ammo, false )
+   self.Weapon:SetClip1( self.Weapon:Clip1() + 1 )
+
+   wep:SendWeaponAnim(ACT_VM_RELOAD)
+
+   self.reloadtimer = CurTime() + wep:SequenceDuration()
+end
+
+function SWEP:FinishReload()
+   self.dt.reloading = false
+   self.Weapon:SendWeaponAnim(ACT_SHOTGUN_RELOAD_FINISH)
+   
+   self.reloadtimer = CurTime() + self.Weapon:SequenceDuration()
+end
+
+function SWEP:CanPrimaryAttack()
+   if self.Weapon:Clip1() <= 0 then
+      self:EmitSound( "Weapon_Shotgun.Empty" )
+      self:SetNextPrimaryFire( CurTime() + self.Primary.Delay )
+      return false
+   end
+   return true
+end
+
+function SWEP:Think()
+   if self.dt.reloading and IsFirstTimePredicted() then
+      if self.Owner:KeyDown(IN_ATTACK) then
+         self:FinishReload()
+         return
+      end
+      
+      if self.reloadtimer <= CurTime() then
+
+         if self.Owner:GetAmmoCount(self.Primary.Ammo) <= 0 then
+            self:FinishReload()
+         elseif self.Weapon:Clip1() < self.Primary.ClipSize then
+            self:PerformReload()
+         else
+            self:FinishReload()
+         end
+         return self.BaseClass.Think(self)          
+      end
+   end
+   return self.BaseClass.Think(self)      
+end
+
+function SWEP:Deploy()
+   self.dt.reloading = false
+   self.reloadtimer = 0
+   return self.BaseClass.Deploy(self)
 end

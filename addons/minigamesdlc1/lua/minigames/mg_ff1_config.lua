@@ -26,7 +26,7 @@ Minigames.VIP.Maps = {
 	["Jungle"] = "cs_jungle",
  }
  
-Minigames.VIP.RoundTime = 400*3
+Minigames.VIP.RoundTime = 60*3
 Minigames.VIP.NumberOfRounds = 5
 
 Minigames.VIP.RespawnTime = 6

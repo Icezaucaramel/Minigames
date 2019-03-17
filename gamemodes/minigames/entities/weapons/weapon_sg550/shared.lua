@@ -1,83 +1,143 @@
--- Variables that are used on both client and server
-SWEP.Gun = ("bb_sg550")					-- must be the name of your swep
-if (GetConVar(SWEP.Gun.."_allowed")) != nil then
-	if not (GetConVar(SWEP.Gun.."_allowed"):GetBool()) then SWEP.Base = "bobs_blacklisted" SWEP.PrintName = SWEP.Gun return end
-end
-SWEP.Category				= "CS:S Weapons"
-SWEP.Author				= ""
-SWEP.Contact				= ""
-SWEP.Purpose				= ""
-SWEP.Instructions				= ""
-SWEP.MuzzleAttachment			= "1" 	-- Should be "1" for CSS models or "muzzle" for hl2 models
-SWEP.ShellEjectAttachment			= "2" 	-- Should be "2" for CSS models or "1" for hl2 models
-SWEP.PrintName				= "SG550"		-- Weapon name (Shown on HUD)	
-SWEP.Slot				= 3				-- Slot in the weapon selection menu
-SWEP.SlotPos				= 68			-- Position in the slot
-SWEP.DrawAmmo				= true		-- Should draw the default HL2 ammo counter
-SWEP.DrawWeaponInfoBox			= false		-- Should draw the weapon info box
-SWEP.BounceWeaponIcon   		= 	false	-- Should the weapon icon bounce?
-SWEP.DrawCrosshair			= false		-- Set false if you want no crosshair from hip
-SWEP.Weight				= 50			-- Rank relative ot other weapons. bigger is better
-SWEP.AutoSwitchTo			= true		-- Auto switch to if we pick it up
-SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
-SWEP.XHair					= false		-- Used for returning crosshair after scope. Must be the same as DrawCrosshair
-SWEP.HoldType 				= "rpg"
+AddCSLuaFile( "shared.lua" )
 
-SWEP.ViewModelFOV			= 55
-SWEP.ViewModelFlip			= false
+SWEP.PrintName			= "sg550"			
+SWEP.Slot				= 0
+SWEP.SlotPos			= 1
+
+SWEP.ViewModelFOV		= 57
+SWEP.ViewModelFlip		= false
+
+SWEP.HoldType			= "ar2"
+SWEP.Base				= "weapon_base_mg"
+SWEP.Category			= "Primary"
+
+//Primary
+SWEP.Primary.Automatic		= true
+SWEP.Primary.Sound 			= Sound( "Weapon_SG550.Single" )
+SWEP.Secondary.Sound = Sound("Default.Zoom")
+SWEP.Primary.Recoil = 0.5
+SWEP.Primary.NumShots = 1
+SWEP.Primary.Cone = 0.01
+SWEP.Primary.Damage = 24
+SWEP.Primary.Delay = 0.250
+SWEP.Primary.ClipSize = 12
+SWEP.Primary.DefaultClip = 420
+
+SWEP.Spawnable			= false
+SWEP.AdminSpawnable		= true
+
 SWEP.ViewModel				= "models/weapons/cstrike/c_snip_sg550.mdl"	-- Weapon view model
 SWEP.WorldModel				= "models/weapons/w_snip_sg550.mdl"	-- Weapon world model
-SWEP.Base 				= "bobs_scoped_base"
-SWEP.Spawnable				= true
-SWEP.UseHands = true
-SWEP.AdminSpawnable			= true
 
-SWEP.Primary.Sound			= Sound("Weapon_SG550.1")		-- script that calls the primary fire sound
-SWEP.Primary.RPM				= 500		-- This is in Rounds Per Minute
-SWEP.Primary.ClipSize			= 20		-- Size of a clip
-SWEP.Primary.DefaultClip			= 420	-- Bullets you start with
-SWEP.Primary.KickUp			= 1				-- Maximum up recoil (rise)
-SWEP.Primary.KickDown			= 1			-- Maximum down recoil (skeet)
-SWEP.Primary.KickHorizontal			= 1		-- Maximum up recoil (stock)
-SWEP.Primary.Automatic			= false		-- Automatic/Semi Auto
-SWEP.Primary.Ammo			= "ar2"
+SWEP.Weight				= 5
+SWEP.AutoSwitchTo		= false
+SWEP.AutoSwitchFrom		= false
 
-SWEP.Secondary.ScopeZoom			= 8	
-SWEP.Secondary.UseACOG			= false -- Choose one scope type
-SWEP.Secondary.UseMilDot		= true		
-SWEP.Secondary.UseSVD			= false	
-SWEP.Secondary.UseParabolic		= false	
-SWEP.Secondary.UseElcan			= false
-SWEP.Secondary.UseGreenDuplex	= false	
-
-SWEP.data 				= {}
-SWEP.data.ironsights			= 1
-SWEP.ScopeScale 			= 0.7
-
-SWEP.Primary.NumShots	= 1		--how many bullets to shoot per trigger pull
-SWEP.Primary.Damage		= 50	--base damage per bullet
-SWEP.Primary.Spread		= .005	--define from-the-hip accuracy 1 is terrible, .0001 is exact)
-SWEP.Primary.IronAccuracy = .001 -- ironsight accuracy, should be the same for shotguns
-
--- enter iron sight info and bone mod info below
 SWEP.IronSightsPos = Vector(-7.401, -5.94, 1.279)
 SWEP.IronSightsAng = Vector(1.18, 0, 0)
 SWEP.SightsPos = Vector(-7.401, -5.94, 1.279)
 SWEP.SightsAng = Vector(1.18, 0, 0)
 SWEP.RunSightsPos = Vector(10.786, -18.347, 0)
 SWEP.RunSightsAng = Vector(-7.982, 70, 0)
-	
+SWEP.Secondary.IronFOV = 0
 
-if GetConVar("M9KDefaultClip") == nil then
-	print("M9KDefaultClip is missing! You may have hit the lua limit!")
-else
-	if GetConVar("M9KDefaultClip"):GetInt() != -1 then
-		SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize * GetConVar("M9KDefaultClip"):GetInt()
-	end
+function SWEP:SetZoom(state)
+    if CLIENT then
+       return
+    elseif IsValid(self.Owner) and self.Owner:IsPlayer() then
+       if state then
+          self.Owner:SetFOV(20, 0.3)
+       else
+          self.Owner:SetFOV(0, 0.2)
+       end
+    end
 end
 
-if GetConVar("M9KUniqueSlots") != nil then
-	if not (GetConVar("M9KUniqueSlots"):GetBool()) then 
-		SWEP.SlotPos = 2
-	end
+-- Add some zoom to ironsights for this gun
+function SWEP:SecondaryAttack()
+    if not self.IronSightsPos then return end
+   -- if self:GetNextSecondaryFire() > CurTime() then return end
+
+    local bIronsights = not self:GetIronsights()
+
+    self:SetIronsights( bIronsights )
+
+    if SERVER then
+        self:SetZoom(bIronsights)
+     else
+        self:EmitSound(self.Secondary.Sound)
+    end
+
+   -- self:SetNextSecondaryFire( CurTime() + 0.3)
+end
+
+function SWEP:PreDrop()
+    self:SetZoom(false)
+    self:SetIronsights(false)
+    return self.BaseClass.PreDrop(self)
+end
+
+function SWEP:Reload()
+	if ( self:Clip1() == self.Primary.ClipSize or self.Owner:GetAmmoCount( self.Primary.Ammo ) <= 0 ) then return end
+    self:DefaultReload( ACT_VM_RELOAD )
+    self:SetIronsights( false )
+    self:SetZoom( false )
+end
+
+
+function SWEP:Holster()
+    self:SetIronsights(false)
+    self:SetZoom(false)
+    return true
+end
+
+if CLIENT then
+   local scope = surface.GetTextureID("sprites/scope")
+   function SWEP:DrawHUD()
+      if self:GetIronsights() then
+         surface.SetDrawColor( 0, 0, 0, 255 )
+
+         local x = ScrW() / 2.0
+         local y = ScrH() / 2.0
+         local scope_size = ScrH()
+
+         -- crosshair
+         local gap = 80
+         local length = scope_size
+         surface.DrawLine( x - length, y, x - gap, y )
+         surface.DrawLine( x + length, y, x + gap, y )
+         surface.DrawLine( x, y - length, x, y - gap )
+         surface.DrawLine( x, y + length, x, y + gap )
+
+         gap = 0
+         length = 50
+         surface.DrawLine( x - length, y, x - gap, y )
+         surface.DrawLine( x + length, y, x + gap, y )
+         surface.DrawLine( x, y - length, x, y - gap )
+         surface.DrawLine( x, y + length, x, y + gap )
+
+
+         -- cover edges
+         local sh = scope_size / 2
+         local w = (x - sh) + 2
+         surface.DrawRect(0, 0, w, scope_size)
+         surface.DrawRect(x + sh - 2, 0, w, scope_size)
+
+         surface.SetDrawColor(255, 0, 0, 255)
+         surface.DrawLine(x, y, x + 1, y + 1)
+
+         -- scope
+         surface.SetTexture(scope)
+         surface.SetDrawColor(255, 255, 255, 255)
+
+         surface.DrawTexturedRectRotated(x, y, scope_size, scope_size, 0)
+
+      else
+         return self.BaseClass.DrawHUD(self)
+      end
+   end
+
+   function SWEP:AdjustMouseSensitivity()
+      return (self:GetIronsights() and 0.2) or nil
+   end
 end

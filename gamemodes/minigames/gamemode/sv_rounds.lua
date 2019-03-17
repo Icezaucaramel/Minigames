@@ -96,6 +96,7 @@ function Minigames:PreRoundPlayers(ply)
 	ply:Spawn()
 	ply:SetJumpPower(300)
 	ply:SetMoveType(MOVETYPE_WALK)
+	ply:Freeze(true)
 
 	hook.Call("PreRoundPlayer", GAMEMODE, ply)
 end
@@ -133,6 +134,7 @@ function Minigames:RoundPlayers(ply)
 		if not ply:Alive() then
 			ply:Spawn()
 		end
+		ply:Freeze(false)
 	end
 	
 	hook.Call("RoundPlayer", GAMEMODE, ply)
@@ -283,7 +285,7 @@ function Minigames:CheckAutobalance()
 		lowest_scoring:SetTeam(lowest_team)
 		lowest_scoring:Kill()
 		timer.Simple(1, function()
-			lowest_scoring:Spawn()
+		lowest_scoring:Spawn()
 		end)
 		net.Start("MG_NotifyTeamBalance")
 			net.WriteString(lowest_scoring:Nick())

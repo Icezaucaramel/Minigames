@@ -28,7 +28,7 @@ local function ServerSettings( pnl )
 		sv_allowcslua = "0",
 		sv_sticktoground = "1",
 		sv_playerpickupallowed = "1",
-		mp_falldamage = "1",
+		mp_falldamage = "0",
 		sv_gravity = "800",
 		sv_friction = "8",
 		phys_timescale = "1.00",

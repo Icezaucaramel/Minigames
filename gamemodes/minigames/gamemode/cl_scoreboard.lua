@@ -39,7 +39,7 @@ AddScoreboardButton(5, {
 
 
 AddScoreboardButton(6, {
-	ButtonName = "Group",
+	ButtonName = "Groupe",
 	Icon = "materials/niandralades/minigames/community.png",
 	Function = "https://forum.lesserruriers.fr/index.php"
 })

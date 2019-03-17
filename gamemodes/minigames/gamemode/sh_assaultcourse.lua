@@ -16,6 +16,7 @@ end
 
 function Minigames:PlayerJoinedPreRound(ply)
 	ply:Spawn()
+	
 end
 
 function Minigames:PlayerConnectedPreround(ply)

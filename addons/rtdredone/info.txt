@@ -1,0 +1,10 @@
+"AddonInfo"
+{
+	"name"				"Roll the Dice script REDONE"
+	"version"			"2.1"
+	"up_date"			"6/23/2011"
+	"author_name"			"[MK] MadkillerMax"
+	"author_email"			""
+	"author_url"			"http://www.mk-servers.com"
+	"info"				"TF2 Style RollTheDice script REDONE"
+}

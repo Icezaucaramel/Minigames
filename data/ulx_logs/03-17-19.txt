@@ -1,0 +1,127 @@
+[14:02:56] New map: cs_compound
+[14:03:59] Client "Icez" connected.
+[14:04:16] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 17 seconds).
+[14:08:58] Client "Bot01" connected.
+[14:08:58] Client "Bot01" spawned in server <BOT> (took 365 seconds).
+[14:08:59] Client "Bot02" connected.
+[14:08:59] Client "Bot02" spawned in server <BOT> (took 366 seconds).
+[14:08:59] Client "Bot03" connected.
+[14:08:59] Client "Bot03" spawned in server <BOT> (took 366 seconds).
+[14:09:00] Client "Bot04" connected.
+[14:09:00] Client "Bot04" spawned in server <BOT> (took 367 seconds).
+[14:09:00] Client "Bot05" connected.
+[14:09:00] Client "Bot05" spawned in server <BOT> (took 367 seconds).
+[14:09:01] Client "Bot06" connected.
+[14:09:01] Client "Bot06" spawned in server <BOT> (took 368 seconds).
+[14:09:05] Bot01 suicided!
+[14:09:07] Bot02 suicided!
+[14:09:15] Icez: !rtd
+[14:09:26] Icez: !rtd
+[14:09:39] Icez: !rtd
+[14:10:56] Icez: !rtd
+[14:11:59] Icez: !rtd
+[14:15:27] Server is shutting down/changing levels.
+
+
+
+[14:16:11] New map: cs_compound
+[14:16:18] Client "Icez" connected.
+[14:16:23] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[14:16:31] Client "Bot01" connected.
+[14:16:31] Client "Bot01" spawned in server <BOT> (took 22 seconds).
+[14:16:31] Client "Bot02" connected.
+[14:16:31] Client "Bot02" spawned in server <BOT> (took 22 seconds).
+[14:16:32] Client "Bot03" connected.
+[14:16:32] Client "Bot03" spawned in server <BOT> (took 23 seconds).
+[14:16:33] Client "Bot04" connected.
+[14:16:33] Client "Bot04" spawned in server <BOT> (took 24 seconds).
+[14:16:34] Bot01 suicided!
+[14:16:45] Icez: !rtd
+[14:19:23] Icez: !rtd
+[14:20:35] Icez suicided!
+[14:21:28] Icez killed Bot04 using player
+[14:22:31] Icez: !rtd
+[14:23:00] Icez killed Bot02 using player
+[14:23:44] Icez: !rtv
+[14:23:46] Icez: !rtd
+[14:27:10] Icez: !rtd
+[14:29:21] Icez: !rtd
+[14:35:12] Server is shutting down/changing levels.
+
+
+
+[15:08:20] New map: cs_compound
+[15:08:22] Client "Icez" connected.
+[15:08:26] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[15:08:48] Client "Bot01" connected.
+[15:08:48] Client "Bot01" spawned in server <BOT> (took 30 seconds).
+[15:08:48] Client "Bot02" connected.
+[15:08:48] Client "Bot02" spawned in server <BOT> (took 30 seconds).
+[15:08:51] Client "Bot03" connected.
+[15:08:51] Client "Bot03" spawned in server <BOT> (took 33 seconds).
+[15:08:51] Client "Bot04" connected.
+[15:08:51] Client "Bot04" spawned in server <BOT> (took 33 seconds).
+[15:08:51] Bot01 suicided!
+[15:08:59] Icez: !rtd
+[15:09:03] Icez: !rtf
+[15:09:05] Icez: !rtd
+[15:10:41] Icez: !rtd
+[15:12:40] Icez: !rtd
+[15:12:44] Icez: !rtd
+[15:12:57] Server is shutting down/changing levels.
+
+
+
+[15:38:43] New map: cs_compound
+[15:38:53] Client "Icez" connected.
+[15:38:57] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 4 seconds).
+[15:39:05] Client "Bot01" connected.
+[15:39:05] Client "Bot01" spawned in server <BOT> (took 24 seconds).
+[15:39:06] Client "Bot02" connected.
+[15:39:06] Client "Bot02" spawned in server <BOT> (took 25 seconds).
+[15:39:06] Client "Bot03" connected.
+[15:39:06] Client "Bot03" spawned in server <BOT> (took 25 seconds).
+[15:39:08] Client "Bot04" connected.
+[15:39:08] Client "Bot04" spawned in server <BOT> (took 27 seconds).
+[15:39:08] Bot01 suicided!
+[15:39:47] Icez: !rtd
+[15:40:13] Icez: !rtd
+[15:40:27] Icez: !rtd 
+[15:40:29] Icez: !rtd
+[15:41:11] Icez: !rtv
+[15:45:50] Icez: !rtd
+[15:51:16] Icez killed Bot03 using player
+[16:00:53] Server is shutting down/changing levels.
+
+
+
+[16:01:35] New map: cs_compound
+[16:01:40] Client "Icez" connected.
+[16:01:45] Client "Icez" spawned in server <STEAM_0:1:79189497> (took 5 seconds).
+[16:01:52] Client "Bot01" connected.
+[16:01:52] Client "Bot01" spawned in server <BOT> (took 19 seconds).
+[16:01:53] Client "Bot02" connected.
+[16:01:53] Client "Bot02" spawned in server <BOT> (took 20 seconds).
+[16:01:53] Client "Bot03" connected.
+[16:01:53] Client "Bot03" spawned in server <BOT> (took 20 seconds).
+[16:01:54] Bot01 suicided!
+[16:01:55] Client "Bot04" connected.
+[16:01:55] Client "Bot04" spawned in server <BOT> (took 22 seconds).
+[16:01:56] Client "Bot05" connected.
+[16:01:56] Client "Bot05" spawned in server <BOT> (took 23 seconds).
+[16:01:56] Client "Bot06" connected.
+[16:01:56] Client "Bot06" spawned in server <BOT> (took 23 seconds).
+[16:01:57] Bot02 suicided!
+[16:02:07] Icez suicided!
+[16:02:44] Icez killed Bot04 using player
+[16:02:48] Icez: !rtd
+[16:03:13] Icez killed Bot04 using player
+[16:03:17] Icez killed Bot03 using player
+[16:03:19] Icez: !rtd
+[16:03:22] Icez: !rtd
+[16:03:25] Icez: !rtd
+[16:03:27] Icez: !rtd
+[16:03:28] Icez: !rtd
+[16:06:20] Icez killed Bot04 using player
+[16:08:47] Icez: !rtd
+[16:15:51] Server is shutting down/changing levels.
